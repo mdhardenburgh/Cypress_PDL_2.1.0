@@ -1,0 +1,1418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package schemaVersion="1.4" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="PACK.xsd">
+  <vendor>Cypress</vendor>
+  <url>http://www.cypress.com/software/cmsis_packs</url>
+  <name>PDL</name>
+  <description>Peripheral Driver Library (PDL) for Cypress's Flexible Microcontroller (FM) portfolio</description>
+  <releases>
+    <release version="2.1.0" date="2016-06-15">First official Cypress PDL release for FM portfolio</release>
+  </releases>
+  <keywords>
+    <!-- keywords for indexing -->
+    <keyword>Cypress</keyword>
+    <keyword>PDL</keyword>
+    <keyword>Peripheral Driver Library</keyword>
+    <keyword>FM</keyword>
+  </keywords>
+  <conditions>
+    <!-- Compiler Conditions -->
+    <condition id="ARMCC">
+      <require Tcompiler="ARMCC" />
+    </condition>
+    <condition id="GCC">
+      <require Tcompiler="GCC" />
+    </condition>
+    <condition id="IAR">
+      <require Tcompiler="IAR" />
+    </condition>
+    <!-- Compiler Conditions -->
+    <condition id="IDE ARMCC">
+      <require Tcompiler="ARMCC" />
+    </condition>
+    <condition id="IDE GCC">
+      <require Tcompiler="GCC" />
+    </condition>
+    <condition id="IDE IAR">
+      <require Tcompiler="IAR" />
+    </condition>
+    <!-- Device Family Conditions -->
+    <condition id="FM0P">
+      <require Dcore="Cortex-M0+" />
+      <require Dvendor="Cypress:19"/>
+    </condition>
+    <condition id="FM3">
+      <require Dcore="Cortex-M3" />
+      <require Dvendor="Cypress:19"/>
+    </condition>
+    <condition id="FM4">
+      <require Dcore="Cortex-M4" />
+      <require Dvendor="Cypress:19"/>
+    </condition>
+    <condition id="Cortex-M Device">
+      <accept Dcore="Cortex-M0+" />
+      <accept Dcore="Cortex-M3" />
+      <accept Dcore="Cortex-M4" />
+    </condition>
+    <condition id="FM">
+      <accept condition="FM0P" />
+      <accept condition="FM3" />
+      <accept condition="FM4" />
+    </condition>
+    <condition id="PDL">
+      <description>Peripheral Driver Library (PDL)</description>
+      <require Dvendor="Cypress:19"/>
+      <require Cclass="Device" Cgroup="Startup" />
+      <require Cclass="PDL" Cgroup="General" />
+      <require condition="FM" />
+    </condition>
+    <condition id="PDL CMSIS">
+      <description>PDL and CMSIS Core</description>
+      <require condition="PDL" />
+      <require Cclass="CMSIS" Cgroup="CORE" />
+    </condition>
+    <condition id="PDL CMSIS FM0P">
+      <description>PDL and CMSIS Core FM0P</description>
+      <require condition="PDL CMSIS" />
+      <require condition="FM0P" />
+    </condition>
+    <condition id="PDL CMSIS FM3">
+      <description>PDL and CMSIS Core FM3</description>
+      <require condition="PDL CMSIS" />
+      <require condition="FM3" />
+    </condition>
+    <condition id="PDL CMSIS FM4">
+      <description>PDL and CMSIS Core FM4</description>
+      <require condition="PDL CMSIS" />
+      <require condition="FM4" />
+    </condition>
+    <condition id="PDL CMSIS FM3 FM4">
+      <description>PDL and CMSIS Core FM3 or FM4</description>
+      <accept condition="PDL CMSIS FM3" />
+      <accept condition="PDL CMSIS FM4" />
+    </condition>
+    <condition id="PDL CMSIS FM0P FM4">
+      <description>PDL and CMSIS Core FM0P or FM4</description>
+      <accept condition="PDL CMSIS FM0P" />
+      <accept condition="PDL CMSIS FM4" />
+    </condition>
+
+    <!-- *********** Device Series Conditions *********** -->
+    
+    <!-- *********** S6E1A1XB *********** -->
+    <condition id="S6E1A11B GCC">
+      <description>S6E1A11B device requiring GCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1A11B" />
+      <require condition="GCC" />
+    </condition>
+    <condition id="S6E1A12B GCC">
+      <description>S6E1A12B device requiring GCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1A12B" />
+      <require condition="GCC" />
+    </condition>
+    <condition id="S6E1A11B IAR">
+      <description>S6E1A11B device requiring IAR</description>
+      <require Dvendor="Cypress:19" Dname="S6E1A11B" />
+      <require condition="IAR" />
+    </condition>
+    <condition id="S6E1A12B IAR">
+      <description>S6E1A12B device requiring IAR</description>
+      <require Dvendor="Cypress:19" Dname="S6E1A12B" />
+      <require condition="IAR" />
+    </condition>
+    <condition id="S6E1A11B ARMCC">
+      <description>S6E1A11B device requiring ARMCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1A11B" />
+      <require condition="ARMCC" />
+    </condition>
+    <condition id="S6E1A12B ARMCC">
+      <description>S6E1A12B device requiring ARMCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1A12B" />
+      <require condition="ARMCC" />
+    </condition>
+    <condition id="S6E1A1XB CMSIS">
+      <description>FM S6E1A1XB device package and CMSIS Core</description>
+      <require Cclass="CMSIS" Cgroup="CORE" />
+      <accept Dvendor="Cypress:19" Dname="S6E1A11B" />
+      <accept Dvendor="Cypress:19" Dname="S6E1A12B" />
+    </condition>
+    <!-- *********** S6E1A1XC *********** -->
+    <condition id="S6E1A11C GCC">
+      <description>S6E1A11C device requiring GCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1A11C" />
+      <require condition="GCC" />
+    </condition>
+    <condition id="S6E1A12C GCC">
+      <description>S6E1A12C device requiring GCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1A12C" />
+      <require condition="GCC" />
+    </condition>
+    <condition id="S6E1A11C IAR">
+      <description>S6E1A11C device requiring IAR</description>
+      <require Dvendor="Cypress:19" Dname="S6E1A11C" />
+      <require condition="IAR" />
+    </condition>
+    <condition id="S6E1A12C IAR">
+      <description>S6E1A12C device requiring IAR</description>
+      <require Dvendor="Cypress:19" Dname="S6E1A12C" />
+      <require condition="IAR" />
+    </condition>
+    <condition id="S6E1A11C ARMCC">
+      <description>S6E1A11C device requiring ARMCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1A11C" />
+      <require condition="ARMCC" />
+    </condition>
+    <condition id="S6E1A12C ARMCC">
+      <description>S6E1A12C device requiring ARMCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1A12C" />
+      <require condition="ARMCC" />
+    </condition>
+    <condition id="S6E1A1XC CMSIS">
+      <description>FM S6E1A1XC device package and CMSIS Core</description>
+      <require Cclass="CMSIS" Cgroup="CORE" />
+      <accept Dvendor="Cypress:19" Dname="S6E1A11C" />
+      <accept Dvendor="Cypress:19" Dname="S6E1A12C" />
+    </condition>
+    <!-- *********** S6E1B3XE *********** -->
+    <condition id="S6E1B34E GCC">
+      <description>S6E1B34E device requiring GCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1B34E" />
+      <require condition="GCC" />
+    </condition>
+    <condition id="S6E1B36E GCC">
+      <description>S6E1B36E device requiring GCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1B36E" />
+      <require condition="GCC" />
+    </condition>
+    <condition id="S6E1B34E IAR">
+      <description>S6E1B34E device requiring IAR</description>
+      <require Dvendor="Cypress:19" Dname="S6E1B34E" />
+      <require condition="IAR" />
+    </condition>
+    <condition id="S6E1B36E IAR">
+      <description>S6E1B36E device requiring IAR</description>
+      <require Dvendor="Cypress:19" Dname="S6E1B36E" />
+      <require condition="IAR" />
+    </condition>
+    <condition id="S6E1B34E ARMCC">
+      <description>S6E1B34E device requiring ARMCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1B34E" />
+      <require condition="ARMCC" />
+    </condition>
+    <condition id="S6E1B36E ARMCC">
+      <description>S6E1B36E device requiring ARMCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1B36E" />
+      <require condition="ARMCC" />
+    </condition>
+    <condition id="S6E1B3XE CMSIS">
+      <description>FM S6E1B3XE device package and CMSIS Core</description>
+      <require Cclass="CMSIS" Cgroup="CORE" />
+      <accept Dvendor="Cypress:19" Dname="S6E1B34E" />
+      <accept Dvendor="Cypress:19" Dname="S6E1B36E" />
+    </condition>
+    <!-- *********** S6E1B3XF *********** -->
+    <condition id="S6E1B34F GCC">
+      <description>S6E1B34F device requiring GCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1B34F" />
+      <require condition="GCC" />
+    </condition>
+    <condition id="S6E1B36F GCC">
+      <description>S6E1B36F device requiring GCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1B36F" />
+      <require condition="GCC" />
+    </condition>
+    <condition id="S6E1B34F IAR">
+      <description>S6E1B34F device requiring IAR</description>
+      <require Dvendor="Cypress:19" Dname="S6E1B34F" />
+      <require condition="IAR" />
+    </condition>
+    <condition id="S6E1B36F IAR">
+      <description>S6E1B36F device requiring IAR</description>
+      <require Dvendor="Cypress:19" Dname="S6E1B36F" />
+      <require condition="IAR" />
+    </condition>
+    <condition id="S6E1B34F ARMCC">
+      <description>S6E1B34F device requiring ARMCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1B34F" />
+      <require condition="ARMCC" />
+    </condition>
+    <condition id="S6E1B36F ARMCC">
+      <description>S6E1B36F device requiring ARMCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1B36F" />
+      <require condition="ARMCC" />
+    </condition>
+    <condition id="S6E1B3XF CMSIS">
+      <description>FM S6E1B3XF device package and CMSIS Core</description>
+      <require Cclass="CMSIS" Cgroup="CORE" />
+      <accept Dvendor="Cypress:19" Dname="S6E1B34F" />
+      <accept Dvendor="Cypress:19" Dname="S6E1B36F" />
+    </condition>
+    <!-- *********** S6E1B3XG *********** -->
+    <condition id="S6E1B34G GCC">
+      <description>S6E1B34G device requiring GCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1B34G" />
+      <require condition="GCC" />
+    </condition>
+    <condition id="S6E1B36G GCC">
+      <description>S6E1B36G device requiring GCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1B36G" />
+      <require condition="GCC" />
+    </condition>
+    <condition id="S6E1B34G IAR">
+      <description>S6E1B34G device requiring IAR</description>
+      <require Dvendor="Cypress:19" Dname="S6E1B34G" />
+      <require condition="IAR" />
+    </condition>
+    <condition id="S6E1B36G IAR">
+      <description>S6E1B36G device requiring IAR</description>
+      <require Dvendor="Cypress:19" Dname="S6E1B36G" />
+      <require condition="IAR" />
+    </condition>
+    <condition id="S6E1B34G ARMCC">
+      <description>S6E1B34G device requiring ARMCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1B34G" />
+      <require condition="ARMCC" />
+    </condition>
+    <condition id="S6E1B36G ARMCC">
+      <description>S6E1B36G device requiring ARMCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1B36G" />
+      <require condition="ARMCC" />
+    </condition> 
+    <condition id="S6E1B3XG CMSIS">
+      <description>FM S6E1B3XG device package and CMSIS Core</description>
+      <require Cclass="CMSIS" Cgroup="CORE" />
+      <accept Dvendor="Cypress:19" Dname="S6E1B34G" />
+      <accept Dvendor="Cypress:19" Dname="S6E1B36G" />
+    </condition>
+   <!-- *********** S6E1B8XE *********** -->
+    <condition id="S6E1B84E GCC">
+      <description>S6E1B84E device requiring GCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1B84E" />
+      <require condition="GCC" />
+    </condition>
+    <condition id="S6E1B86E GCC">
+      <description>S6E1B86E device requiring GCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1B86E" />
+      <require condition="GCC" />
+    </condition>
+    <condition id="S6E1B84E IAR">
+      <description>S6E1B84E device requiring IAR</description>
+      <require Dvendor="Cypress:19" Dname="S6E1B84E" />
+      <require condition="IAR" />
+    </condition>
+    <condition id="S6E1B86E IAR">
+      <description>S6E1B86E device requiring IAR</description>
+      <require Dvendor="Cypress:19" Dname="S6E1B86E" />
+      <require condition="IAR" />
+    </condition>
+    <condition id="S6E1B84E ARMCC">
+      <description>S6E1B84E device requiring ARMCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1B84E" />
+      <require condition="ARMCC" />
+    </condition>
+    <condition id="S6E1B86E ARMCC">
+      <description>S6E1B86E device requiring ARMCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1B86E" />
+      <require condition="ARMCC" />
+    </condition> 
+    <condition id="S6E1B8XE CMSIS">
+      <description>FM S6E1B8XE device package and CMSIS Core</description>
+      <require Cclass="CMSIS" Cgroup="CORE" />
+      <accept Dvendor="Cypress:19" Dname="S6E1B84E" />
+      <accept Dvendor="Cypress:19" Dname="S6E1B86E" />
+    </condition>
+    <!-- *********** S6E1B8XF *********** -->
+    <condition id="S6E1B84F GCC">
+      <description>S6E1B84F device requiring GCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1B84F" />
+      <require condition="GCC" />
+    </condition>
+    <condition id="S6E1B86F GCC">
+      <description>S6E1B86F device requiring GCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1B86F" />
+      <require condition="GCC" />
+    </condition>
+    <condition id="S6E1B84F IAR">
+      <description>S6E1B84F device requiring IAR</description>
+      <require Dvendor="Cypress:19" Dname="S6E1B84F" />
+      <require condition="IAR" />
+    </condition>
+    <condition id="S6E1B86F IAR">
+      <description>S6E1B86F device requiring IAR</description>
+      <require Dvendor="Cypress:19" Dname="S6E1B86F" />
+      <require condition="IAR" />
+    </condition>
+    <condition id="S6E1B84F ARMCC">
+      <description>S6E1B84F device requiring ARMCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1B84F" />
+      <require condition="ARMCC" />
+    </condition>
+    <condition id="S6E1B86F ARMCC">
+      <description>S6E1B86F device requiring ARMCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1B86F" />
+      <require condition="ARMCC" />
+    </condition>
+    <condition id="S6E1B8XF CMSIS">
+      <description>FM S6E1B8XF device package and CMSIS Core</description>
+      <require Cclass="CMSIS" Cgroup="CORE" />
+      <accept Dvendor="Cypress:19" Dname="S6E1B84F" />
+      <accept Dvendor="Cypress:19" Dname="S6E1B86F" />
+    </condition>
+    <!-- *********** S6E1B8XG *********** -->
+    <condition id="S6E1B84G GCC">
+      <description>S6E1B84G device requiring GCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1B84G" />
+      <require condition="GCC" />
+    </condition>
+    <condition id="S6E1B86G GCC">
+      <description>S6E1B86G device requiring GCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1B86G" />
+      <require condition="GCC" />
+    </condition>
+    <condition id="S6E1B84G IAR">
+      <description>S6E1B84G device requiring IAR</description>
+      <require Dvendor="Cypress:19" Dname="S6E1B84G" />
+      <require condition="IAR" />
+    </condition>
+    <condition id="S6E1B86G IAR">
+      <description>S6E1B86G device requiring IAR</description>
+      <require Dvendor="Cypress:19" Dname="S6E1B86G" />
+      <require condition="IAR" />
+    </condition>
+    <condition id="S6E1B84G ARMCC">
+      <description>S6E1B84G device requiring ARMCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1B84G" />
+      <require condition="ARMCC" />
+    </condition>
+    <condition id="S6E1B86G ARMCC">
+      <description>S6E1B86G device requiring ARMCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1B86G" />
+      <require condition="ARMCC" />
+    </condition>
+    <condition id="S6E1B8XG CMSIS">
+      <description>FM S6E1B8XG device package and CMSIS Core</description>
+      <require Cclass="CMSIS" Cgroup="CORE" />
+      <accept Dvendor="Cypress:19" Dname="S6E1B84G" />
+      <accept Dvendor="Cypress:19" Dname="S6E1B86G" />
+    </condition>
+    <!-- *********** S6E1C1XB *********** -->
+    <condition id="S6E1C11B GCC">
+      <description>S6E1C11B device requiring GCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1C11B" />
+      <require condition="GCC" />
+    </condition>
+    <condition id="S6E1C12B GCC">
+      <description>S6E1C12B device requiring GCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1C12B" />
+      <require condition="GCC" />
+    </condition>
+    <condition id="S6E1C11B IAR">
+      <description>S6E1C11B device requiring IAR</description>
+      <require Dvendor="Cypress:19" Dname="S6E1C11B" />
+      <require condition="IAR" />
+    </condition>
+    <condition id="S6E1C12B IAR">
+      <description>S6E1C12B device requiring IAR</description>
+      <require Dvendor="Cypress:19" Dname="S6E1C12B" />
+      <require condition="IAR" />
+    </condition>   
+    <condition id="S6E1C11B ARMCC">
+      <description>S6E1C11B device requiring ARMCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1C11B" />
+      <require condition="ARMCC" />
+    </condition>
+    <condition id="S6E1C12B ARMCC">
+      <description>S6E1C12B device requiring ARMCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1C12B" />
+      <require condition="ARMCC" />
+    </condition>
+    <condition id="S6E1C1XB CMSIS">
+      <description>FM S6E1C1XB device package and CMSIS Core</description>
+      <require Cclass="CMSIS" Cgroup="CORE" />
+      <accept Dvendor="Cypress:19" Dname="S6E1C11B" />
+      <accept Dvendor="Cypress:19" Dname="S6E1C12B" />
+    </condition>
+    <!-- *********** S6E1C1XC *********** -->
+    <condition id="S6E1C11C GCC">
+      <description>S6E1C11C device requiring GCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1C11C" />
+      <require condition="GCC" />
+    </condition>
+    <condition id="S6E1C12C GCC">
+      <description>S6E1C12C device requiring GCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1C12C" />
+      <require condition="GCC" />
+    </condition>
+    <condition id="S6E1C11C IAR">
+      <description>S6E1C11C device requiring IAR</description>
+      <require Dvendor="Cypress:19" Dname="S6E1C11C" />
+      <require condition="IAR" />
+    </condition>
+    <condition id="S6E1C12C IAR">
+      <description>S6E1C12C device requiring IAR</description>
+      <require Dvendor="Cypress:19" Dname="S6E1C12C" />
+      <require condition="IAR" />
+    </condition>
+    <condition id="S6E1C11C ARMCC">
+      <description>S6E1C11C device requiring ARMCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1C11C" />
+      <require condition="ARMCC" />
+    </condition>
+    <condition id="S6E1C12C ARMCC">
+      <description>S6E1C12C device requiring ARMCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1C12C" />
+      <require condition="ARMCC" />
+    </condition>
+    <condition id="S6E1C1XC CMSIS">
+      <description>FM S6E1C1XC device package and CMSIS Core</description>
+      <require Cclass="CMSIS" Cgroup="CORE" />
+      <accept Dvendor="Cypress:19" Dname="S6E1C11C" />
+      <accept Dvendor="Cypress:19" Dname="S6E1C12C" />
+    </condition>
+    <!-- *********** S6E1C1XD *********** -->
+    <condition id="S6E1C11D GCC">
+      <description>S6E1C11D device requiring GCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1C11D" />
+      <require condition="GCC" />
+    </condition>
+    <condition id="S6E1C12D GCC">
+      <description>S6E1C12D device requiring GCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1C12D" />
+      <require condition="GCC" />
+    </condition>
+    <condition id="S6E1C11D IAR">
+      <description>S6E1C11D device requiring IAR</description>
+      <require Dvendor="Cypress:19" Dname="S6E1C11D" />
+      <require condition="IAR" />
+    </condition>
+    <condition id="S6E1C12D IAR">
+      <description>S6E1C12D device requiring IAR</description>
+      <require Dvendor="Cypress:19" Dname="S6E1C12D" />
+      <require condition="IAR" />
+    </condition>
+    <condition id="S6E1C11D ARMCC">
+      <description>S6E1C11D device requiring ARMCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1C11D" />
+      <require condition="ARMCC" />
+    </condition>
+    <condition id="S6E1C12D ARMCC">
+      <description>S6E1C12D device requiring ARMCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1C12D" />
+      <require condition="ARMCC" />
+    </condition>
+    <condition id="S6E1C1XD CMSIS">
+      <description>FM S6E1C1XD device package and CMSIS Core</description>
+      <require Cclass="CMSIS" Cgroup="CORE" />
+      <accept Dvendor="Cypress:19" Dname="S6E1C11D" />
+      <accept Dvendor="Cypress:19" Dname="S6E1C12D" />
+    </condition>
+    <!-- *********** S6E1C3XB *********** -->
+    <condition id="S6E1C31B GCC">
+      <description>S6E1C31B device requiring GCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1C31B" />
+      <require condition="GCC" />
+    </condition>
+    <condition id="S6E1C32B GCC">
+      <description>S6E1C32B device requiring GCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1C32B" />
+      <require condition="GCC" />
+    </condition>
+    <condition id="S6E1C31B IAR">
+      <description>S6E1C31B device requiring IAR</description>
+      <require Dvendor="Cypress:19" Dname="S6E1C31B" />
+      <require condition="IAR" />
+    </condition>
+    <condition id="S6E1C32B IAR">
+      <description>S6E1C32B device requiring IAR</description>
+      <require Dvendor="Cypress:19" Dname="S6E1C32B" />
+      <require condition="IAR" />
+    </condition>
+    <condition id="S6E1C31B ARMCC">
+      <description>S6E1C31B device requiring ARMCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1C31B" />
+      <require condition="ARMCC" />
+    </condition>
+    <condition id="S6E1C32B ARMCC">
+      <description>S6E1C32B device requiring ARMCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1C32B" />
+      <require condition="ARMCC" />
+    </condition>
+    <condition id="S6E1C3XB CMSIS">
+      <description>FM S6E1C3XB device package and CMSIS Core</description>
+      <require Cclass="CMSIS" Cgroup="CORE" />
+      <accept Dvendor="Cypress:19" Dname="S6E1C31B" />
+      <accept Dvendor="Cypress:19" Dname="S6E1C32B" />
+    </condition>
+    <!-- *********** S6E1C3XC *********** -->
+    <condition id="S6E1C31C GCC">
+      <description>S6E1C31C device requiring GCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1C31C" />
+      <require condition="GCC" />
+    </condition>
+    <condition id="S6E1C32C GCC">
+      <description>S6E1C32C device requiring GCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1C32C" />
+      <require condition="GCC" />
+    </condition>
+    <condition id="S6E1C31C IAR">
+      <description>S6E1C31C device requiring IAR</description>
+      <require Dvendor="Cypress:19" Dname="S6E1C31C" />
+      <require condition="IAR" />
+    </condition>
+    <condition id="S6E1C32C IAR">
+      <description>S6E1C32C device requiring IAR</description>
+      <require Dvendor="Cypress:19" Dname="S6E1C32C" />
+      <require condition="IAR" />
+    </condition>
+    <condition id="S6E1C31C ARMCC">
+      <description>S6E1C31C device requiring ARMCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1C31C" />
+      <require condition="ARMCC" />
+    </condition>
+    <condition id="S6E1C32C ARMCC">
+      <description>S6E1C32C device requiring ARMCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1C32C" />
+      <require condition="ARMCC" />
+    </condition>
+    <condition id="S6E1C3XC CMSIS">
+      <description>FM S6E1C3XC device package and CMSIS Core</description>
+      <require Cclass="CMSIS" Cgroup="CORE" />
+      <accept Dvendor="Cypress:19" Dname="S6E1C31C" />
+      <accept Dvendor="Cypress:19" Dname="S6E1C32C" />
+    </condition>
+    <!-- *********** S6E1C3XD *********** -->
+    <condition id="S6E1C31D GCC">
+      <description>S6E1C31D device requiring GCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1C31D" />
+      <require condition="GCC" />
+    </condition>
+    <condition id="S6E1C32D GCC">
+      <description>S6E1C32D device requiring GCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1C32D" />
+      <require condition="GCC" />
+    </condition>
+    <condition id="S6E1C31D IAR">
+      <description>S6E1C31D device requiring IAR</description>
+      <require Dvendor="Cypress:19" Dname="S6E1C31D" />
+      <require condition="IAR" />
+    </condition>
+    <condition id="S6E1C32D IAR">
+      <description>S6E1C32D device requiring IAR</description>
+      <require Dvendor="Cypress:19" Dname="S6E1C32D" />
+      <require condition="IAR" />
+    </condition>
+    <condition id="S6E1C31D ARMCC">
+      <description>S6E1C31D device requiring ARMCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1C31D" />
+      <require condition="ARMCC" />
+    </condition>
+    <condition id="S6E1C32D ARMCC">
+      <description>S6E1C32D device requiring ARMCC</description>
+      <require Dvendor="Cypress:19" Dname="S6E1C32D" />
+      <require condition="ARMCC" />
+    </condition>
+    <condition id="S6E1C3XD CMSIS">
+      <description>FM S6E1C3XD device package and CMSIS Core</description>
+      <require Cclass="CMSIS" Cgroup="CORE" />
+      <accept Dvendor="Cypress:19" Dname="S6E1C31D" />
+      <accept Dvendor="Cypress:19" Dname="S6E1C32D" />
+    </condition>
+  </conditions>
+  
+  <components>
+    <!-- CMSIS-Core component -->
+    <component Cclass="CMSIS" Cgroup="CORE" Cversion="4.3.0" condition="Cortex-M Device">
+      <description>CMSIS-CORE for Cortex-M</description>
+      <files>
+        <!-- CPU independent -->
+        <file category="include" name="cmsis/include/"/>
+        <file category="header"  name="cmsis/include/arm_common_tables.h" />
+        <file category="header"  name="cmsis/include/arm_const_structs.h" />
+        <file category="header"  name="cmsis/include/arm_math.h" />
+        <file category="header"  name="cmsis/include/cmsis_armcc.h"  condition="ARMCC"/>
+        <file category="header"  name="cmsis/include/cmsis_armcc_V6.h" />
+        <file category="header"  name="cmsis/include/cmsis_gcc.h"    condition="GCC" />
+        <file category="header"  name="cmsis/include/core_cm0plus.h" condition="FM0P" />
+        <file category="header"  name="cmsis/include/core_cm3.h"     condition="FM3"/>
+        <file category="header"  name="cmsis/include/core_cm4.h"     condition="FM4"/>
+        <file category="header"  name="cmsis/include/core_cmFunc.h" />
+        <file category="header"  name="cmsis/include/core_cmInstr.h" />
+        <file category="header"  name="cmsis/include/core_cmSimd.h" />
+      </files>
+    </component>
+
+    <component Cclass="PDL" Cgroup="General" Cversion="2.1.0" condition="PDL CMSIS">
+      <description>General files required for PDL</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="drivers/" />
+        <file category="header"  name="drivers/base_types.h" />
+        <file category="header"  name="drivers/pdl.h" />
+        <file category="header"  name="drivers/pdl_header.h" />
+        <file category="sourceC" name="drivers/pdl.c" version="2.1.0"/>
+      </files>
+    </component>
+    
+    <component Cclass="PDL" Cgroup="Interrupts" Cversion="1.0.0" condition="PDL CMSIS">
+      <description>Interrupt Service Routines for DPL</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="drivers/" />
+        <file category="header"  name="drivers/interrupts_fm0p.h"           condition="PDL CMSIS FM0P"/>
+        <file category="sourceC" name="drivers/interrupts_fm0p_type_1-a.c"  condition="PDL CMSIS FM0P"/>
+        <file category="sourceC" name="drivers/interrupts_fm0p_type_1-b.c"  condition="PDL CMSIS FM0P"/>
+        <file category="sourceC" name="drivers/interrupts_fm0p_type_2-a.c"  condition="PDL CMSIS FM0P"/>
+        <file category="sourceC" name="drivers/interrupts_fm0p_type_2-b.c"  condition="PDL CMSIS FM0P"/>
+        <file category="sourceC" name="drivers/interrupts_fm0p_type_3.c"    condition="PDL CMSIS FM0P"/>
+        <file category="header"  name="drivers/interrupts_fm3.h"            condition="PDL CMSIS FM3"/>
+        <file category="sourceC" name="drivers/interrupts_fm3_type_a.c"     condition="PDL CMSIS FM3"/>
+        <file category="sourceC" name="drivers/interrupts_fm3_type_b.c"     condition="PDL CMSIS FM3"/>
+        <file category="sourceC" name="drivers/interrupts_fm3_type_c.c"     condition="PDL CMSIS FM3"/> 
+        <file category="header"  name="drivers/interrupts_fm4.h"            condition="PDL CMSIS FM4"/>
+        <file category="sourceC" name="drivers/interrupts_fm4_type_a.c"     condition="PDL CMSIS FM4"/>
+        <file category="sourceC" name="drivers/interrupts_fm4_type_b.c"     condition="PDL CMSIS FM4"/>
+        <file category="sourceC" name="drivers/interrupts_fm4_type_c.c"     condition="PDL CMSIS FM4"/>          
+      </files>
+    </component>
+
+    <component Cclass="PDL" Cgroup="ADC" Cversion="1.20" condition="PDL CMSIS">
+      <description>12-bit ADC Peripheral Driver</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="drivers/" />
+        <file category="sourceC" name="drivers/adc/adc.c" />
+        <file category="header"  name="drivers/adc/adc.h" />        
+      </files>
+    </component>
+
+    <component Cclass="PDL" Cgroup="BTMR" Cversion="1.20" condition="PDL CMSIS">
+      <description>Base Timer (BT) Peripheral Driver</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="drivers/" />
+        <file category="sourceC" name="drivers/bt/bt.c" />
+        <file category="header"  name="drivers/bt/bt.h" />
+      </files>
+    </component>   
+
+    <component Cclass="PDL" Cgroup="CAN" Cversion="1.30" condition="PDL CMSIS FM3 FM4">
+      <description>CAN Peripheral Driver</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="drivers/" />
+        <file category="sourceC" name="drivers/can/can.c" />
+        <file category="header"  name="drivers/can/can.h" />  
+      </files>
+    </component>
+
+    <component Cclass="PDL" Cgroup="CANFD" Cversion="1.20" condition="PDL CMSIS FM4">
+      <description>CAN with Flexible Data Rate Peripheral Driver</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="drivers/" />
+        <file category="sourceC" name="drivers/can/canfd.c" />
+        <file category="header"  name="drivers/can/canfd.h" />
+        <file category="sourceC" name="drivers/can/can_pre.c" />
+        <file category="header"  name="drivers/can/can_pre.h" />        
+      </files>
+    </component>
+
+    <component Cclass="PDL" Cgroup="CLK" Cversion="1.20" condition="PDL CMSIS">
+      <description>Clock Peripheral Driver</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="drivers/" />
+        <file category="sourceC" name="drivers/clk/clk.c" />
+        <file category="header"  name="drivers/clk/clk.h" />
+      </files>
+    </component> 
+
+    <component Cclass="PDL" Cgroup="CRTRIM" Cversion="1.20" condition="PDL CMSIS">
+      <description>High-speed Clock Rate (CR) Trimming Peripheral Driver</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="drivers/" />
+        <file category="sourceC" name="drivers/cr/cr.c" />
+        <file category="header"  name="drivers/cr/cr.h" />
+      </files>
+    </component>
+
+    <component Cclass="PDL" Cgroup="CRC" Cversion="1.20" condition="PDL CMSIS">
+      <description>Cyclic Redundancy Check (CRC) Peripheral Driver</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="drivers/" />
+        <file category="sourceC" name="drivers/crc/crc.c" />
+        <file category="header"  name="drivers/crc/crc.h" />
+      </files>
+    </component> 
+
+    <component Cclass="PDL" Cgroup="CSV" Cversion="1.20" condition="PDL CMSIS">
+      <description>Clock Supervisor (CSV) Peripheral Driver</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="drivers/" />
+        <file category="sourceC" name="drivers/csv/csv.c" />
+        <file category="header"  name="drivers/csv/csv.h" /> 
+      </files>
+    </component>
+
+    <component Cclass="PDL" Cgroup="DAC" Cversion="1.20" condition="PDL CMSIS FM3 FM4">
+      <description>DAC Peripheral Driver</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="drivers/" />
+        <file category="sourceC" name="drivers/dac/dac.c" />
+        <file category="header"  name="drivers/dac/dac.h" />
+      </files>
+    </component>
+
+    <component Cclass="PDL" Cgroup="DMA" Cversion="1.20" condition="PDL CMSIS">
+      <description>DMA Peripheral Driver</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="drivers/" />
+        <file category="sourceC" name="drivers/dma/dma.c" />
+        <file category="header"  name="drivers/dma/dma.h" />
+      </files>
+    </component>
+
+    <component Cclass="PDL" Cgroup="DSTC" Cversion="1.40" condition="PDL CMSIS FM0P FM4">
+      <description>Descriptor System Data Transfer Controller (DSTC) Peripheral Driver</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="drivers/" />
+        <file category="sourceC" name="drivers/dstc/dstc.c" />
+        <file category="header"  name="drivers/dstc/dstc.h" />
+      </files>
+    </component>  
+
+    <component Cclass="PDL" Cgroup="DTMR" Cversion="1.20" condition="PDL CMSIS">
+      <description>Dual Timer (DT) Peripheral Driver</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="drivers/" />
+        <file category="sourceC" name="drivers/dt/dt.c" />
+        <file category="header"  name="drivers/dt/dt.h" />
+      </files>
+    </component>     
+
+    <component Cclass="PDL" Cgroup="EXINT" Cversion="1.30" condition="PDL CMSIS">
+      <description>External Interrupt (EXINT) Peripheral Driver</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="drivers/" />
+        <file category="sourceC" name="drivers/exint/exint.c" />
+        <file category="header"  name="drivers/exint/exint.h" />
+      </files>
+    </component>     
+
+    <component Cclass="PDL" Cgroup="EXTIF" Cversion="1.50" condition="PDL CMSIS FM3 FM4">
+      <description>External Bus Interface (EXTIF) Peripheral Drivers</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="drivers/" />
+        <file category="sourceC" name="drivers/extif/extif.c" />
+        <file category="header"  name="drivers/extif/extif.h" />
+      </files>
+    </component>    
+
+    <component Cclass="PDL" Cgroup="FLASH" Cversion="1.20" condition="PDL CMSIS">
+      <description>Flash Memory Peripheral Drivers</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="drivers/" />
+        <file category="sourceC" name="drivers/flash/dualflash.c" />
+        <file category="header"  name="drivers/flash/dualflash.h" />
+        <file category="sourceC" name="drivers/flash/mainflash.c" />
+        <file category="header"  name="drivers/flash/mainflash.h" />
+        <file category="sourceC" name="drivers/flash/workflash.c" />
+        <file category="header"  name="drivers/flash/workflash.h" />
+      </files>
+    </component>
+
+    <component Cclass="PDL" Cgroup="GPIO" Cversion="1.20" condition="PDL CMSIS">
+      <description>Generar Purpose I/O (GPIO) Peripheral Drivers</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="drivers/" />
+        <file category="header"  name="drivers/gpio/gpio.h"  version="1.20"/>
+        <file category="header"  name="drivers/gpio/fgpio.h" version="1.20" condition="FM0P" /> 
+      </files>
+    </component>
+
+    <component Cclass="PDL" Cgroup="HBIF" Cversion="1.20" condition="PDL CMSIS FM4">
+      <description>Hyper Bus Interface Peripheral Drivers</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="drivers/" />
+        <file category="sourceC" name="drivers/hbif/hbif.c" />
+        <file category="header"  name="drivers/hbif/hbif.h" />
+      </files>
+    </component>
+
+   <component Cclass="PDL" Cgroup="HDMICEC" Cversion="1.20" condition="PDL CMSIS">
+      <description>HDMI-CEC/Remote Control Receiver (RC) Peripheral Driver</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="drivers/" />
+        <file category="sourceC" name="drivers/rc/rc.c" />
+        <file category="header"  name="drivers/rc/rc.h" />
+      </files>
+    </component>
+
+    <component Cclass="PDL" Cgroup="HSSPI" Cversion="1.20" condition="PDL CMSIS FM4">
+      <description>High Speed SPI / Quad SPI Peripheral Driver</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="drivers/" />
+        <file category="sourceC" name="drivers/hsspi/hsspi.c" />
+        <file category="header"  name="drivers/hsspi/hsspi.h" />
+      </files>
+    </component>
+
+    <component Cclass="PDL" Cgroup="I2CS" Cversion="1.20" condition="PDL CMSIS FM0P">
+      <description>I2C Slave Peripheral Driver</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="drivers/" />
+        <file category="sourceC" name="drivers/i2cs/i2cs.c" />
+        <file category="header"  name="drivers/i2cs/i2cs.h" />
+      </files>
+    </component>
+
+    <component Cclass="PDL" Cgroup="I2S" Cversion="1.20" condition="PDL CMSIS">
+      <description>I2S Peripheral Driver</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="drivers/" />
+        <file category="sourceC" name="drivers/i2s/i2s.c" />
+        <file category="header"  name="drivers/i2s/i2s.h" />
+      </files>
+    </component>
+
+    <component Cclass="PDL" Cgroup="ICC" Cversion="1.20" condition="PDL CMSIS">
+      <description>Smart Card Interface (ICC) Peripheral Driver</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="drivers/" />
+        <file category="sourceC" name="drivers/icc/icc.c" />
+        <file category="header"  name="drivers/icc/icc.h" />
+      </files>
+    </component>    
+
+    <component Cclass="PDL" Cgroup="LCD" Cversion="1.20" condition="PDL CMSIS">
+      <description>Segment LCD Peripheral Driver</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="drivers/" />
+        <file category="sourceC" name="drivers/lcd/lcd.c" />
+        <file category="header"  name="drivers/lcd/lcd.h" />
+      </files>
+    </component>    
+
+    <component Cclass="PDL" Cgroup="LPM" Cversion="1.30" condition="PDL CMSIS">
+      <description>Low Power Modes Peripheral Driver</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="drivers/" />
+        <file category="sourceC" name="drivers/lpm/lpm.c" />
+        <file category="header"  name="drivers/lpm/lpm.h" />
+      </files>
+    </component>      
+
+    <component Cclass="PDL" Cgroup="LVD" Cversion="1.20" condition="PDL CMSIS">
+      <description>Low Voltage Detection Peripheral Driver</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="drivers/" />
+        <file category="sourceC" name="drivers/lvd/lvd.c" />
+        <file category="header"  name="drivers/lvd/lvd.h" />
+      </files>
+    </component>
+
+    <component Cclass="PDL" Cgroup="MFS" Cversion="1.20" condition="PDL CMSIS">
+      <description>Multi-Function Serial (MFS) Peripheral Driver</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="drivers/" />
+        <file category="sourceC" name="drivers/mfs/mfs.c" />
+        <file category="header"  name="drivers/mfs/mfs.h" />
+      </files>
+    </component>
+
+    <component Cclass="PDL" Cgroup="MFT_ADCMP" Cversion="1.20" condition="PDL CMSIS">
+      <description>Multi-Function Timer (MFT) Peripheral Driver</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="drivers/" />
+        <file category="sourceC" name="drivers/mft/mft_adcmp.c" />
+        <file category="header"  name="drivers/mft/mft_adcmp.h" />
+        <file category="sourceC" name="drivers/mft/mft_frt.c" />
+        <file category="header"  name="drivers/mft/mft_frt.h" />
+        <file category="sourceC" name="drivers/mft/mft_icu.c" />
+        <file category="header"  name="drivers/mft/mft_icu.h" />
+        <file category="sourceC" name="drivers/mft/mft_ocu.c" />
+        <file category="header"  name="drivers/mft/mft_ocu.h" />
+        <file category="sourceC" name="drivers/mft/mft_wfg.c" />
+        <file category="header"  name="drivers/mft/mft_wfg.h" />
+      </files>
+    </component>
+
+    <component Cclass="PDL" Cgroup="PCRC" Cversion="1.20" condition="PDL CMSIS FM4">
+      <description>Programmable Cyclic Redundancy Check (PCRC) Peripheral Driver</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="drivers/" />
+        <file category="sourceC" name="drivers/pcrc/pcrc.c" />
+        <file category="header"  name="drivers/pcrc/pcrc.h" />
+      </files>
+    </component> 
+
+    <component Cclass="PDL" Cgroup="PPG" Cversion="1.20" condition="PDL CMSIS">
+      <description>Programmable Pulse Generator (PPG) Peripheral Driver</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="drivers/" />
+        <file category="sourceC" name="drivers/ppg/ppg.c" />
+        <file category="header"  name="drivers/ppg/ppg.h" />
+      </files>
+    </component> 
+
+   <component Cclass="PDL" Cgroup="QPRC" Cversion="1.20" condition="PDL CMSIS">
+      <description>Quadrature Position/Revolution Counter Peripheral Driver</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="drivers/" />
+        <file category="sourceC" name="drivers/qprc/qprc.c" />
+        <file category="header"  name="drivers/qprc/qprc.h" />
+      </files>
+    </component> 
+
+   <component Cclass="PDL" Cgroup="RESET" Cversion="1.20" condition="PDL CMSIS">
+      <description>Reset Peripheral Driver</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="drivers/" />
+        <file category="sourceC" name="drivers/reset/reset.c" />
+        <file category="header"  name="drivers/reset/reset.h" />
+      </files>
+    </component>
+
+   <component Cclass="PDL" Cgroup="RTC" Cversion="1.20" condition="PDL CMSIS">
+      <description>Real Time Clock (RTC) Peripheral Driver</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="drivers/" />
+        <file category="sourceC" name="drivers/rtc/rtc.c" />
+        <file category="header"  name="drivers/rtc/rtc.h" />
+      </files>
+    </component>
+
+   <component Cclass="PDL" Cgroup="SDIF" Cversion="1.20" condition="PDL CMSIS FM4">
+      <description>SD Card Interface (SDIF) Peripheral Driver</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="drivers/" />
+        <file category="sourceC" name="drivers/sdif/sdif.c" />
+        <file category="header"  name="drivers/sdif/sdif.h" />
+      </files>
+    </component>
+
+   <component Cclass="PDL" Cgroup="UID" Cversion="1.20" condition="PDL CMSIS">
+      <description>Unique ID (UID) Peripheral Driver</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="drivers/" />
+        <file category="sourceC" name="drivers/uid/uid.c" />
+        <file category="header"  name="drivers/uid/uid.h" />
+      </files>
+    </component>
+
+    <component Cclass="PDL" Cgroup="VBAT" Cversion="1.20" condition="PDL CMSIS FM0P FM4">
+      <description>VBAT Domain Peripheral Driver</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="drivers/" />
+        <file category="sourceC" name="drivers/vbat/vbat.c" />
+        <file category="header"  name="drivers/vbat/vbat.h" />
+      </files>
+    </component>
+
+   <component Cclass="PDL" Cgroup="WCNT" Cversion="1.20" condition="PDL CMSIS">
+      <description>Watch Counter (WC) Peripheral Driver</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="drivers/" />
+        <file category="sourceC" name="drivers/wc/wc.c" />
+        <file category="header"  name="drivers/wc/wc.h" />
+      </files>
+    </component>
+
+    <component Cclass="PDL" Cgroup="WDG" Cversion="1.20" condition="PDL CMSIS">
+      <description>Watchdog Timer Peripheral Drivers</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="drivers/" />
+        <file category="header"  name="drivers/wdg/wdg.h" />
+        <file category="header"  name="drivers/wdg/hwwdg.h" />
+        <file category="sourceC" name="drivers/wdg/hwwdg.c" />
+        <file category="header"  name="drivers/wdg/swwdg.h" />
+        <file category="sourceC" name="drivers/wdg/swwdg.c" />
+      </files>
+    </component>
+
+    <!-- ********** CMSIS-Startup components ********** -->
+
+    <!-- S6E1A1XB Series -->
+    <component Cclass="Device" Cgroup="Startup" Cversion="1.0.0" condition="S6E1A1XB CMSIS">
+      <description>System and Startup for S6E1A1XB device</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="devices/fm0p/s6e1a1xb/common/" />
+        <file category="header"  name="devices/fm0p/s6e1a1xb/common/s6e1a1xb.h" />
+        <file category="header"  name="devices/fm0p/s6e1a1xb/common/gpio_s6e1a1xb.h" version="1.0.0" />
+        <file category="header"  name="devices/fm0p/s6e1a1xb/common/mcu.h" version="1.0.0" />
+        <!-- startup / system file -->
+        <file category="sourceAsm" name="devices/fm0p/s6e1a1xb/projects/mdk/startup_s6e1a1.s"    version="1.0.0" attr="config" condition="ARMCC" />
+        <file category="sourceAsm" name="devices/fm0p/s6e1a1xb/projects/iar/startup_s6e1a1.s"    version="1.0.0" attr="config" condition="IAR" />
+        <file category="sourceAsm" name="devices/fm0p/s6e1a1xb/projects/armgcc/startup_s6e1a1.S" version="1.0.0" attr="config" condition="GCC" />
+        <file category="linkerScript" name="devices/fm0p/s6e1a1xb/projects/armgcc/linker/s6e1a11_rom.ld" version="1.0.0" attr="config" condition="S6E1A11B GCC"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1a1xb/projects/armgcc/linker/s6e1a12_rom.ld" version="1.0.0" attr="config" condition="S6E1A12B GCC"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1a1xb/projects/iar/linker/s6e1a11_rom.icf"   version="1.0.0" attr="config" condition="S6E1A11B IAR"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1a1xb/projects/iar/linker/s6e1a12_rom.icf"   version="1.0.0" attr="config" condition="S6E1A12B IAR"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1a1xb/projects/mdk/linker/s6e1a11_rom.sct"   version="1.0.0" attr="config" condition="S6E1A11B ARMCC"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1a1xb/projects/mdk/linker/s6e1a12_rom.sct"   version="1.0.0" attr="config" condition="S6E1A12B ARMCC"/>
+        <file category="sourceC" name="devices/fm0p/s6e1a1xb/common/system_s6e1a1.c" attr="config" version="1.0.0" />
+        <file category="header"  name="devices/fm0p/s6e1a1xb/common/system_s6e1a1.h" attr="config" version="1.0.0" />
+        <file category="sourceC" name="devices/fm0p/s6e1a1xb/projects/main.c" select="empty main.c" attr="template" version="1.0.0" />
+      </files>
+    </component>
+
+    <!-- S6E1A1XC Series -->
+    <component Cclass="Device" Cgroup="Startup" Cversion="1.0.0" condition="S6E1A1XC CMSIS">
+      <description>System and Startup for S6E1A1XC device</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="devices/fm0p/s6e1a1xc/common/" />
+        <file category="header"  name="devices/fm0p/s6e1a1xc/common/s6e1a1xc.h" />
+        <file category="header"  name="devices/fm0p/s6e1a1xc/common/gpio_s6e1a1xc.h" version="1.0.0" />
+        <file category="header"  name="devices/fm0p/s6e1a1xc/common/mcu.h" version="1.0.0" />
+        <!-- startup / system file -->
+        <file category="sourceAsm" name="devices/fm0p/s6e1a1xc/projects/mdk/startup_s6e1a1.s"    version="1.0.0" attr="config" condition="ARMCC" />
+        <file category="sourceAsm" name="devices/fm0p/s6e1a1xc/projects/iar/startup_s6e1a1.s"    version="1.0.0" attr="config" condition="IAR" />
+        <file category="sourceAsm" name="devices/fm0p/s6e1a1xc/projects/armgcc/startup_s6e1a1.S" version="1.0.0" attr="config" condition="GCC" />
+        <file category="linkerScript" name="devices/fm0p/s6e1a1xc/projects/armgcc/linker/s6e1a11_rom.ld" version="1.0.0" attr="config" condition="S6E1A11C GCC"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1a1xc/projects/armgcc/linker/s6e1a12_rom.ld" version="1.0.0" attr="config" condition="S6E1A12C GCC"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1a1xc/projects/iar/linker/s6e1a11_rom.icf"   version="1.0.0" attr="config" condition="S6E1A11C IAR"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1a1xc/projects/iar/linker/s6e1a12_rom.icf"   version="1.0.0" attr="config" condition="S6E1A12C IAR"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1a1xc/projects/mdk/linker/s6e1a11_rom.sct"   version="1.0.0" attr="config" condition="S6E1A11B ARMCC"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1a1xc/projects/mdk/linker/s6e1a12_rom.sct"   version="1.0.0" attr="config" condition="S6E1A12B ARMCC"/>
+        <file category="sourceC" name="devices/fm0p/s6e1a1xc/common/system_s6e1a1.c" attr="config" version="1.0.0" />
+        <file category="header"  name="devices/fm0p/s6e1a1xc/common/system_s6e1a1.h" attr="config" version="1.0.0" />
+        <file category="sourceC" name="devices/fm0p/s6e1a1xc/projects/main.c" select="empty main.c" attr="template" version="1.0.0" />
+      </files>
+    </component>
+
+    <!-- S6E1B3XE Series -->
+    <component Cclass="Device" Cgroup="Startup" Cversion="1.0.0" condition="S6E1B3XE CMSIS">
+      <description>System and Startup for S6E1B3XE device</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="devices/fm0p/s6e1b3xe/common/" />
+        <file category="header"  name="devices/fm0p/s6e1b3xe/common/s6e1b3xe.h" />
+        <file category="header"  name="devices/fm0p/s6e1b3xe/common/gpio_s6e1b3xe.h" version="1.0.0" />
+        <file category="header"  name="devices/fm0p/s6e1b3xe/common/mcu.h" version="1.0.0" />
+        <!-- startup / system file -->
+        <file category="sourceAsm" name="devices/fm0p/s6e1b3xe/projects/mdk/startup_s6e1b3.s"    version="1.0.0" attr="config" condition="ARMCC" />
+        <file category="sourceAsm" name="devices/fm0p/s6e1b3xe/projects/iar/startup_s6e1b3.s"    version="1.0.0" attr="config" condition="IAR" />
+        <file category="sourceAsm" name="devices/fm0p/s6e1b3xe/projects/armgcc/startup_s6e1b3.S" version="1.0.0" attr="config" condition="GCC" />
+        <file category="linkerScript" name="devices/fm0p/s6e1b3xe/projects/armgcc/linker/s6e1b34_rom.ld" version="1.0.0" attr="config" condition="S6E1B34E GCC"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1b3xe/projects/armgcc/linker/s6e1b36_rom.ld" version="1.0.0" attr="config" condition="S6E1B36E GCC"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1b3xe/projects/iar/linker/s6e1b34_rom.icf"   version="1.0.0" attr="config" condition="S6E1B34E IAR"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1b3xe/projects/iar/linker/s6e1b36_rom.icf"   version="1.0.0" attr="config" condition="S6E1B36E IAR"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1b3xe/projects/mdk/linker/s6e1b34_rom.sct"   version="1.0.0" attr="config" condition="S6E1B34E ARMCC"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1b3xe/projects/mdk/linker/s6e1b36_rom.sct"   version="1.0.0" attr="config" condition="S6E1B36E ARMCC"/>
+        <file category="sourceC" name="devices/fm0p/s6e1b3xe/common/system_s6e1b3.c" attr="config" version="1.0.0" />
+        <file category="header"  name="devices/fm0p/s6e1b3xe/common/system_s6e1b3.h" attr="config" version="1.0.0" />
+        <file category="sourceC" name="devices/fm0p/s6e1b3xe/projects/main.c" select="empty main.c" attr="template" version="1.0.0" />
+      </files>
+    </component>
+
+    <!-- S6E1B3XF Series -->
+    <component Cclass="Device" Cgroup="Startup" Cversion="1.0.0" condition="S6E1B3XF CMSIS">
+      <description>System and Startup for S6E1B3XF device</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="devices/fm0p/s6e1b3xf/common/" />
+        <file category="header"  name="devices/fm0p/s6e1b3xf/common/s6e1b3xf.h" />
+        <file category="header"  name="devices/fm0p/s6e1b3xf/common/gpio_s6e1b3xf.h" version="1.0.0" />
+        <file category="header"  name="devices/fm0p/s6e1b3xf/common/mcu.h" version="1.0.0" />
+        <!-- startup / system file -->
+        <file category="sourceAsm" name="devices/fm0p/s6e1b3xf/projects/mdk/startup_s6e1b3.s"    version="1.0.0" attr="config" condition="ARMCC" />
+        <file category="sourceAsm" name="devices/fm0p/s6e1b3xf/projects/iar/startup_s6e1b3.s"    version="1.0.0" attr="config" condition="IAR" />
+        <file category="sourceAsm" name="devices/fm0p/s6e1b3xf/projects/armgcc/startup_s6e1b3.S" version="1.0.0" attr="config" condition="GCC" />
+        <file category="linkerScript" name="devices/fm0p/s6e1b3xf/projects/armgcc/linker/s6e1b34_rom.ld" version="1.0.0" attr="config" condition="S6E1B34F GCC"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1b3xf/projects/armgcc/linker/s6e1b36_rom.ld" version="1.0.0" attr="config" condition="S6E1B36F GCC"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1b3xf/projects/iar/linker/s6e1b34_rom.icf"   version="1.0.0" attr="config" condition="S6E1B34F IAR"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1b3xf/projects/iar/linker/s6e1b36_rom.icf"   version="1.0.0" attr="config" condition="S6E1B36F IAR"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1b3xf/projects/mdk/linker/s6e1b34_rom.sct"   version="1.0.0" attr="config" condition="S6E1B34E ARMCC"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1b3xf/projects/mdk/linker/s6e1b36_rom.sct"   version="1.0.0" attr="config" condition="S6E1B36E ARMCC"/>
+        <file category="sourceC" name="devices/fm0p/s6e1b3xf/common/system_s6e1b3.c" attr="config" version="1.0.0" />
+        <file category="header"  name="devices/fm0p/s6e1b3xf/common/system_s6e1b3.h" attr="config" version="1.0.0" />
+        <file category="sourceC" name="devices/fm0p/s6e1b3xf/projects/main.c" select="empty main.c" attr="template" version="1.0.0" />
+      </files>
+    </component>
+
+    <!-- S6E1B3XG Series -->
+    <component Cclass="Device" Cgroup="Startup" Cversion="1.0.0" condition="S6E1B3XG CMSIS">
+      <description>System and Startup for S6E1B3XG device</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="devices/fm0p/s6e1b3xg/common/" />
+        <file category="header"  name="devices/fm0p/s6e1b3xg/common/s6e1b3xg.h" />
+        <file category="header"  name="devices/fm0p/s6e1b3xg/common/gpio_s6e1b3xg.h" version="1.0.0" />
+        <file category="header"  name="devices/fm0p/s6e1b3xg/common/mcu.h" version="1.0.0" />
+        <!-- startup / system file -->
+        <file category="sourceAsm" name="devices/fm0p/s6e1b3xg/projects/mdk/startup_s6e1b3.s"    version="1.0.0" attr="config" condition="ARMCC" />
+        <file category="sourceAsm" name="devices/fm0p/s6e1b3xg/projects/iar/startup_s6e1b3.s"    version="1.0.0" attr="config" condition="IAR" />
+        <file category="sourceAsm" name="devices/fm0p/s6e1b3xg/projects/armgcc/startup_s6e1b3.S" version="1.0.0" attr="config" condition="GCC" />
+        <file category="linkerScript" name="devices/fm0p/s6e1b3xg/projects/armgcc/linker/s6e1b34_rom.ld" version="1.0.0" attr="config" condition="S6E1B34G GCC"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1b3xg/projects/armgcc/linker/s6e1b36_rom.ld" version="1.0.0" attr="config" condition="S6E1B36G GCC"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1b3xg/projects/iar/linker/s6e1b34_rom.icf"   version="1.0.0" attr="config" condition="S6E1B34G IAR"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1b3xg/projects/iar/linker/s6e1b36_rom.icf"   version="1.0.0" attr="config" condition="S6E1B36G IAR"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1b3xg/projects/mdk/linker/s6e1b34_rom.sct"   version="1.0.0" attr="config" condition="S6E1B34G ARMCC"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1b3xg/projects/mdk/linker/s6e1b36_rom.sct"   version="1.0.0" attr="config" condition="S6E1B36G ARMCC"/>
+        <file category="sourceC" name="devices/fm0p/s6e1b3xg/common/system_s6e1b3.c" attr="config" version="1.0.0" />
+        <file category="header"  name="devices/fm0p/s6e1b3xg/common/system_s6e1b3.h" attr="config" version="1.0.0" />
+        <file category="sourceC" name="devices/fm0p/s6e1b3xg/projects/main.c" select="empty main.c" attr="template" version="1.0.0" />
+      </files>
+    </component>
+
+    <!-- S6E1B8XE Series -->
+    <component Cclass="Device" Cgroup="Startup" Cversion="1.0.0" condition="S6E1B8XE CMSIS">
+      <description>System and Startup for S6E1B8XE device</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="devices/fm0p/s6e1b8xe/common/" />
+        <file category="header"  name="devices/fm0p/s6e1b8xe/common/s6e1b8xe.h" />
+        <file category="header"  name="devices/fm0p/s6e1b8xe/common/gpio_s6e1b8xe.h" version="1.0.0" />
+        <file category="header"  name="devices/fm0p/s6e1b8xe/common/mcu.h" version="1.0.0" />
+        <!-- startup / system file -->
+        <file category="sourceAsm" name="devices/fm0p/s6e1b8xe/projects/mdk/startup_s6e1b8.s"    version="1.0.0" attr="config" condition="ARMCC" />
+        <file category="sourceAsm" name="devices/fm0p/s6e1b8xe/projects/iar/startup_s6e1b8.s"    version="1.0.0" attr="config" condition="IAR" />
+        <file category="sourceAsm" name="devices/fm0p/s6e1b8xe/projects/armgcc/startup_s6e1b8.S" version="1.0.0" attr="config" condition="GCC" />
+        <file category="linkerScript" name="devices/fm0p/s6e1b8xe/projects/armgcc/linker/s6e1b84_rom.ld" version="1.0.0" attr="config" condition="S6E1B84E GCC"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1b8xe/projects/armgcc/linker/s6e1b86_rom.ld" version="1.0.0" attr="config" condition="S6E1B86E GCC"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1b8xe/projects/iar/linker/s6e1b84_rom.icf"   version="1.0.0" attr="config" condition="S6E1B84E IAR"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1b8xe/projects/iar/linker/s6e1b86_rom.icf"   version="1.0.0" attr="config" condition="S6E1B86E IAR"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1b8xe/projects/mdk/linker/s6e1b84_rom.sct"   version="1.0.0" attr="config" condition="S6E1B84E ARMCC"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1b8xe/projects/mdk/linker/s6e1b86_rom.sct"   version="1.0.0" attr="config" condition="S6E1B86E ARMCC"/>
+        <file category="sourceC" name="devices/fm0p/s6e1b8xe/common/system_s6e1b8.c" attr="config" version="1.0.0" />
+        <file category="header"  name="devices/fm0p/s6e1b8xe/common/system_s6e1b8.h" attr="config" version="1.0.0" />
+        <file category="sourceC" name="devices/fm0p/s6e1b8xe/projects/main.c" select="empty main.c" attr="template" version="1.0.0" />
+      </files>
+    </component>
+
+    <!-- S6E1B8XF Series -->
+    <component Cclass="Device" Cgroup="Startup" Cversion="1.0.0" condition="S6E1B8XF CMSIS">
+      <description>System and Startup for S6E1B8XF device</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="devices/fm0p/s6e1b8xf/common/" />
+        <file category="header"  name="devices/fm0p/s6e1b8xf/common/s6e1b8xf.h" />
+        <file category="header"  name="devices/fm0p/s6e1b8xf/common/gpio_s6e1b8xf.h" version="1.0.0" />
+        <file category="header"  name="devices/fm0p/s6e1b8xf/common/mcu.h" version="1.0.0" />
+        <!-- startup / system file -->
+        <file category="sourceAsm" name="devices/fm0p/s6e1b8xf/projects/mdk/startup_s6e1b8.s"    version="1.0.0" attr="config" condition="ARMCC" />
+        <file category="sourceAsm" name="devices/fm0p/s6e1b8xf/projects/iar/startup_s6e1b8.s"    version="1.0.0" attr="config" condition="IAR" />
+        <file category="sourceAsm" name="devices/fm0p/s6e1b8xf/projects/armgcc/startup_s6e1b8.S" version="1.0.0" attr="config" condition="GCC" />
+        <file category="linkerScript" name="devices/fm0p/s6e1b8xf/projects/armgcc/linker/s6e1b84_rom.ld" version="1.0.0" attr="config" condition="S6E1B84F GCC"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1b8xf/projects/armgcc/linker/s6e1b86_rom.ld" version="1.0.0" attr="config" condition="S6E1B86F GCC"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1b8xf/projects/iar/linker/s6e1b84_rom.icf"   version="1.0.0" attr="config" condition="S6E1B84F IAR"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1b8xf/projects/iar/linker/s6e1b86_rom.icf"   version="1.0.0" attr="config" condition="S6E1B86F IAR"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1b8xf/projects/mdk/linker/s6e1b84_rom.sct"   version="1.0.0" attr="config" condition="S6E1B84F ARMCC"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1b8xf/projects/mdk/linker/s6e1b86_rom.sct"   version="1.0.0" attr="config" condition="S6E1B86F ARMCC"/>
+        <file category="sourceC" name="devices/fm0p/s6e1b8xf/common/system_s6e1b8.c" attr="config" version="1.0.0" />
+        <file category="header"  name="devices/fm0p/s6e1b8xf/common/system_s6e1b8.h" attr="config" version="1.0.0" />
+        <file category="sourceC" name="devices/fm0p/s6e1b8xf/projects/main.c" select="empty main.c" attr="template" version="1.0.0" />
+      </files>
+    </component>
+
+    <!-- S6E1B8XG Series -->
+    <component Cclass="Device" Cgroup="Startup" Cversion="1.0.0" condition="S6E1B8XG CMSIS">
+      <description>System and Startup for S6E1B8XG device</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="devices/fm0p/s6e1b8xg/common/" />
+        <file category="header"  name="devices/fm0p/s6e1b8xg/common/s6e1b8xg.h" />
+        <file category="header"  name="devices/fm0p/s6e1b8xg/common/gpio_s6e1b8xg.h" version="1.0.0" />
+        <file category="header"  name="devices/fm0p/s6e1b8xg/common/mcu.h" version="1.0.0" />
+        <!-- startup / system file -->
+        <file category="sourceAsm" name="devices/fm0p/s6e1b8xg/projects/mdk/startup_s6e1b8.s"    version="1.0.0" attr="config" condition="ARMCC" />
+        <file category="sourceAsm" name="devices/fm0p/s6e1b8xg/projects/iar/startup_s6e1b8.s"    version="1.0.0" attr="config" condition="IAR" />
+        <file category="sourceAsm" name="devices/fm0p/s6e1b8xg/projects/armgcc/startup_s6e1b8.S" version="1.0.0" attr="config" condition="GCC" />
+        <file category="linkerScript" name="devices/fm0p/s6e1b8xg/projects/armgcc/linker/s6e1b84_rom.ld" version="1.0.0" attr="config" condition="S6E1B84G GCC"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1b8xg/projects/armgcc/linker/s6e1b86_rom.ld" version="1.0.0" attr="config" condition="S6E1B86G GCC"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1b8xg/projects/iar/linker/s6e1b84_rom.icf"   version="1.0.0" attr="config" condition="S6E1B84G IAR"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1b8xg/projects/iar/linker/s6e1b86_rom.icf"   version="1.0.0" attr="config" condition="S6E1B86G IAR"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1b8xg/projects/mdk/linker/s6e1b84_rom.sct"   version="1.0.0" attr="config" condition="S6E1B84G ARMCC"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1b8xg/projects/mdk/linker/s6e1b86_rom.sct"   version="1.0.0" attr="config" condition="S6E1B86G ARMCC"/>
+        <file category="sourceC" name="devices/fm0p/s6e1b8xg/common/system_s6e1b8.c" attr="config" version="1.0.0" />
+        <file category="header"  name="devices/fm0p/s6e1b8xg/common/system_s6e1b8.h" attr="config" version="1.0.0" />
+        <file category="sourceC" name="devices/fm0p/s6e1b8xg/projects/main.c" select="empty main.c" attr="template" version="1.0.0" />
+      </files>
+    </component>
+
+    <!-- S6E1C1XB Series -->
+    <component Cclass="Device" Cgroup="Startup" Cversion="1.0.0" condition="S6E1C1XB CMSIS">
+      <description>System and Startup for S6E1C1XB device</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="devices/fm0p/s6e1c1xb/common/" />
+        <file category="header"  name="devices/fm0p/s6e1c1xb/common/s6e1c1xb.h" />
+        <file category="header"  name="devices/fm0p/s6e1c1xb/common/gpio_s6e1c1xb.h" version="1.0.0" />
+        <file category="header"  name="devices/fm0p/s6e1c1xb/common/mcu.h" version="1.0.0" />
+        <!-- startup / system file -->
+        <file category="sourceAsm" name="devices/fm0p/s6e1c1xb/projects/mdk/startup_s6e1c1.s"    version="1.0.0" attr="config" condition="ARMCC" />
+        <file category="sourceAsm" name="devices/fm0p/s6e1c1xb/projects/iar/startup_s6e1c1.s"    version="1.0.0" attr="config" condition="IAR" />
+        <file category="sourceAsm" name="devices/fm0p/s6e1c1xb/projects/armgcc/startup_s6e1c1.S" version="1.0.0" attr="config" condition="GCC" />
+        <file category="linkerScript" name="devices/fm0p/s6e1c1xb/projects/armgcc/linker/s6e1c11_rom.ld" version="1.0.0" attr="config" condition="S6E1C11B GCC"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1c1xb/projects/armgcc/linker/s6e1c12_rom.ld" version="1.0.0" attr="config" condition="S6E1C12B GCC"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1c1xb/projects/iar/linker/s6e1c11_rom.icf"   version="1.0.0" attr="config" condition="S6E1C11B IAR"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1c1xb/projects/iar/linker/s6e1c12_rom.icf"   version="1.0.0" attr="config" condition="S6E1C12B IAR"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1c1xb/projects/mdk/linker/s6e1c11_rom.sct"   version="1.0.0" attr="config" condition="S6E1C11B ARMCC"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1c1xb/projects/mdk/linker/s6e1c12_rom.sct"   version="1.0.0" attr="config" condition="S6E1C12B ARMCC"/>
+        <file category="sourceC" name="devices/fm0p/s6e1c1xb/common/system_s6e1c1.c" attr="config" version="1.0.0" />
+        <file category="header"  name="devices/fm0p/s6e1c1xb/common/system_s6e1c1.h" attr="config" version="1.0.0" />
+        <file category="sourceC" name="devices/fm0p/s6e1c1xb/projects/main.c" select="empty main.c" attr="template" version="1.0.0" />
+      </files>
+    </component>
+
+    <!-- S6E1C1XC Series -->
+    <component Cclass="Device" Cgroup="Startup" Cversion="1.0.0" condition="S6E1C1XC CMSIS">
+      <description>System and Startup for S6E1C1XC device</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="devices/fm0p/s6e1c1xc/common/" />
+        <file category="header"  name="devices/fm0p/s6e1c1xc/common/s6e1c1xc.h" />
+        <file category="header"  name="devices/fm0p/s6e1c1xc/common/gpio_s6e1c1xc.h" version="1.0.0" />
+        <file category="header"  name="devices/fm0p/s6e1c1xc/common/mcu.h" version="1.0.0" />
+        <!-- startup / system file -->
+        <file category="sourceAsm" name="devices/fm0p/s6e1c1xc/projects/mdk/startup_s6e1c1.s"    version="1.0.0" attr="config" condition="ARMCC" />
+        <file category="sourceAsm" name="devices/fm0p/s6e1c1xc/projects/iar/startup_s6e1c1.s"    version="1.0.0" attr="config" condition="IAR" />
+        <file category="sourceAsm" name="devices/fm0p/s6e1c1xc/projects/armgcc/startup_s6e1c1.S" version="1.0.0" attr="config" condition="GCC" />
+        <file category="linkerScript" name="devices/fm0p/s6e1c1xc/projects/armgcc/linker/s6e1c11_rom.ld" version="1.0.0" attr="config" condition="S6E1C11C GCC"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1c1xc/projects/armgcc/linker/s6e1c12_rom.ld" version="1.0.0" attr="config" condition="S6E1C12C GCC"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1c1xc/projects/iar/linker/s6e1c11_rom.icf"   version="1.0.0" attr="config" condition="S6E1C11C IAR"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1c1xc/projects/iar/linker/s6e1c12_rom.icf"   version="1.0.0" attr="config" condition="S6E1C12C IAR"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1c1xc/projects/mdk/linker/s6e1c11_rom.sct"   version="1.0.0" attr="config" condition="S6E1C11C ARMCC"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1c1xc/projects/mdk/linker/s6e1c12_rom.sct"   version="1.0.0" attr="config" condition="S6E1C12C ARMCC"/>
+        <file category="sourceC" name="devices/fm0p/s6e1c1xc/common/system_s6e1c1.c" attr="config" version="1.0.0" />
+        <file category="header"  name="devices/fm0p/s6e1c1xc/common/system_s6e1c1.h" attr="config" version="1.0.0" />
+        <file category="sourceC" name="devices/fm0p/s6e1c1xc/projects/main.c" select="empty main.c" attr="template" version="1.0.0" />
+      </files>
+    </component>
+
+    <!-- S6E1C1XD Series -->
+    <component Cclass="Device" Cgroup="Startup" Cversion="1.0.0" condition="S6E1C1XD CMSIS">
+      <description>System and Startup for S6E1C1XD device</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="devices/fm0p/s6e1c1xd/common/" />
+        <file category="header"  name="devices/fm0p/s6e1c1xd/common/s6e1c1xd.h" />
+        <file category="header"  name="devices/fm0p/s6e1c1xd/common/gpio_s6e1c1xd.h" version="1.0.0" />
+        <file category="header"  name="devices/fm0p/s6e1c1xd/common/mcu.h" version="1.0.0" />
+        <!-- startup / system file -->
+        <file category="sourceAsm" name="devices/fm0p/s6e1c1xd/projects/mdk/startup_s6e1c1.s"    version="1.0.0" attr="config" condition="ARMCC" />
+        <file category="sourceAsm" name="devices/fm0p/s6e1c1xd/projects/iar/startup_s6e1c1.s"    version="1.0.0" attr="config" condition="IAR" />
+        <file category="sourceAsm" name="devices/fm0p/s6e1c1xd/projects/armgcc/startup_s6e1c1.S" version="1.0.0" attr="config" condition="GCC" />
+        <file category="linkerScript" name="devices/fm0p/s6e1c1xd/projects/armgcc/linker/s6e1c11_rom.ld" version="1.0.0" attr="config" condition="S6E1C11D GCC"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1c1xd/projects/armgcc/linker/s6e1c12_rom.ld" version="1.0.0" attr="config" condition="S6E1C12D GCC"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1c1xd/projects/iar/linker/s6e1c11_rom.icf"   version="1.0.0" attr="config" condition="S6E1C11D IAR"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1c1xd/projects/iar/linker/s6e1c12_rom.icf"   version="1.0.0" attr="config" condition="S6E1C12D IAR"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1c1xd/projects/mdk/linker/s6e1c11_rom.sct"   version="1.0.0" attr="config" condition="S6E1C11D ARMCC"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1c1xd/projects/mdk/linker/s6e1c12_rom.sct"   version="1.0.0" attr="config" condition="S6E1C12D ARMCC"/>
+        <file category="sourceC" name="devices/fm0p/s6e1c1xd/common/system_s6e1c1.c" attr="config" version="1.0.0" />
+        <file category="header"  name="devices/fm0p/s6e1c1xd/common/system_s6e1c1.h" attr="config" version="1.0.0" />
+        <file category="sourceC" name="devices/fm0p/s6e1c1xd/projects/main.c" select="empty main.c" attr="template" version="1.0.0" />
+      </files>
+    </component>
+
+    <!-- S6E1C3XB Series -->
+    <component Cclass="Device" Cgroup="Startup" Cversion="1.0.0" condition="S6E1C3XB CMSIS">
+      <description>System and Startup for S6E1C3XB device</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="devices/fm0p/s6e1c3xb/common/" />
+        <file category="header"  name="devices/fm0p/s6e1c3xb/common/s6e1c3xb.h" />
+        <file category="header"  name="devices/fm0p/s6e1c3xb/common/gpio_s6e1c3xb.h" version="1.0.0" />
+        <file category="header"  name="devices/fm0p/s6e1c3xb/common/mcu.h" version="1.0.0" />
+        <!-- startup / system file -->
+        <file category="sourceAsm" name="devices/fm0p/s6e1c3xb/projects/mdk/startup_s6e1c3.s"    version="1.0.0" attr="config" condition="ARMCC" />
+        <file category="sourceAsm" name="devices/fm0p/s6e1c3xb/projects/iar/startup_s6e1c3.s"    version="1.0.0" attr="config" condition="IAR" />
+        <file category="sourceAsm" name="devices/fm0p/s6e1c3xb/projects/armgcc/startup_s6e1c3.S" version="1.0.0" attr="config" condition="GCC" />
+        <file category="linkerScript" name="devices/fm0p/s6e1c3xb/projects/armgcc/linker/s6e1c31_rom.ld" version="1.0.0" attr="config" condition="S6E1C31B GCC"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1c3xb/projects/armgcc/linker/s6e1c32_rom.ld" version="1.0.0" attr="config" condition="S6E1C32B GCC"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1c3xb/projects/iar/linker/s6e1c31_rom.icf"   version="1.0.0" attr="config" condition="S6E1C31B IAR"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1c3xb/projects/iar/linker/s6e1c32_rom.icf"   version="1.0.0" attr="config" condition="S6E1C32B IAR"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1c3xb/projects/mdk/linker/s6e1c31_rom.sct"   version="1.0.0" attr="config" condition="S6E1C31B ARMCC"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1c3xb/projects/mdk/linker/s6e1c32_rom.sct"   version="1.0.0" attr="config" condition="S6E1C32B ARMCC"/>
+        <file category="sourceC" name="devices/fm0p/s6e1c3xb/common/system_s6e1c3.c" attr="config" version="1.0.0" />
+        <file category="header"  name="devices/fm0p/s6e1c3xb/common/system_s6e1c3.h" attr="config" version="1.0.0" />
+        <file category="sourceC" name="devices/fm0p/s6e1c3xb/projects/main.c" select="empty main.c" attr="template" version="1.0.0" />
+      </files>
+    </component>
+
+    <!-- S6E1C3XC Series -->
+    <component Cclass="Device" Cgroup="Startup" Cversion="1.0.0" condition="S6E1C3XC CMSIS">
+      <description>System and Startup for S6E1C3XC device</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="devices/fm0p/s6e1c3xc/common/" />
+        <file category="header"  name="devices/fm0p/s6e1c3xc/common/s6e1c3xc.h" />
+        <file category="header"  name="devices/fm0p/s6e1c3xc/common/gpio_s6e1c3xc.h" version="1.0.0" />
+        <file category="header"  name="devices/fm0p/s6e1c3xc/common/mcu.h" version="1.0.0" />
+        <!-- startup / system file -->
+        <file category="sourceAsm" name="devices/fm0p/s6e1c3xc/projects/mdk/startup_s6e1c3.s"    version="1.0.0" attr="config" condition="ARMCC" />
+        <file category="sourceAsm" name="devices/fm0p/s6e1c3xc/projects/iar/startup_s6e1c3.s"    version="1.0.0" attr="config" condition="IAR" />
+        <file category="sourceAsm" name="devices/fm0p/s6e1c3xc/projects/armgcc/startup_s6e1c3.S" version="1.0.0" attr="config" condition="GCC" />
+        <file category="linkerScript" name="devices/fm0p/s6e1c3xc/projects/armgcc/linker/s6e1c31_rom.ld" version="1.0.0" attr="config" condition="S6E1C31C GCC"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1c3xc/projects/armgcc/linker/s6e1c32_rom.ld" version="1.0.0" attr="config" condition="S6E1C32C GCC"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1c3xc/projects/iar/linker/s6e1c31_rom.icf"   version="1.0.0" attr="config" condition="S6E1C31C IAR"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1c3xc/projects/iar/linker/s6e1c32_rom.icf"   version="1.0.0" attr="config" condition="S6E1C32C IAR"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1c3xc/projects/mdk/linker/s6e1c31_rom.sct"   version="1.0.0" attr="config" condition="S6E1C31C ARMCC"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1c3xc/projects/mdk/linker/s6e1c32_rom.sct"   version="1.0.0" attr="config" condition="S6E1C32C ARMCC"/>
+        <file category="sourceC" name="devices/fm0p/s6e1c3xc/common/system_s6e1c3.c" attr="config" version="1.0.0" />
+        <file category="header"  name="devices/fm0p/s6e1c3xc/common/system_s6e1c3.h" attr="config" version="1.0.0" />
+        <file category="sourceC" name="devices/fm0p/s6e1c3xc/projects/main.c" select="empty main.c" attr="template" version="1.0.0" />
+      </files>
+    </component>
+
+    <!-- S6E1C3XD Series -->
+    <component Cclass="Device" Cgroup="Startup" Cversion="1.0.0" condition="S6E1C3XD CMSIS">
+      <description>System and Startup for S6E1C3XD device</description>
+      <files>
+        <!-- include folder / file -->
+        <file category="include" name="devices/fm0p/s6e1c3xd/common/" />
+        <file category="header"  name="devices/fm0p/s6e1c3xd/common/s6e1c3xd.h" />
+        <file category="header"  name="devices/fm0p/s6e1c3xd/common/gpio_s6e1c3xd.h" version="1.0.0" />
+        <file category="header"  name="devices/fm0p/s6e1c3xd/common/mcu.h" version="1.0.0" />
+        <!-- startup / system file -->
+        <file category="sourceAsm" name="devices/fm0p/s6e1c3xd/projects/mdk/startup_s6e1c3.s"    version="1.0.0" attr="config" condition="ARMCC" />
+        <file category="sourceAsm" name="devices/fm0p/s6e1c3xd/projects/iar/startup_s6e1c3.s"    version="1.0.0" attr="config" condition="IAR" />
+        <file category="sourceAsm" name="devices/fm0p/s6e1c3xd/projects/armgcc/startup_s6e1c3.S" version="1.0.0" attr="config" condition="GCC" />
+        <file category="linkerScript" name="devices/fm0p/s6e1c3xd/projects/armgcc/linker/s6e1c31_rom.ld" version="1.0.0" attr="config" condition="S6E1C31D GCC"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1c3xd/projects/armgcc/linker/s6e1c32_rom.ld" version="1.0.0" attr="config" condition="S6E1C32D GCC"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1c3xd/projects/iar/linker/s6e1c31_rom.icf"   version="1.0.0" attr="config" condition="S6E1C31D IAR"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1c3xd/projects/iar/linker/s6e1c32_rom.icf"   version="1.0.0" attr="config" condition="S6E1C32D IAR"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1c3xd/projects/mdk/linker/s6e1c31_rom.sct"   version="1.0.0" attr="config" condition="S6E1C31D ARMCC"/>
+        <file category="linkerScript" name="devices/fm0p/s6e1c3xd/projects/mdk/linker/s6e1c32_rom.sct"   version="1.0.0" attr="config" condition="S6E1C32D ARMCC"/>
+        <file category="sourceC" name="devices/fm0p/s6e1c3xd/common/system_s6e1c3.c" attr="config" version="1.0.0" />
+        <file category="header"  name="devices/fm0p/s6e1c3xd/common/system_s6e1c3.h" attr="config" version="1.0.0" />
+        <file category="sourceC" name="devices/fm0p/s6e1c3xd/projects/main.c" select="empty main.c" attr="template" version="1.0.0" />
+      </files>
+    </component>
+
+  </components>
+  
+</package>

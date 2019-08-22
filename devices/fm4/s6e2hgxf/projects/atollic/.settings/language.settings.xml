@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project>
+  <configuration id=com.atollic.truestudio.exe.debug.842880058 name="S6E2HG4F_Debug">
+    <extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
+      <provider copy-of="extension" id="org.eclipse.cdt.ui.UserLanguageSettingsProvider"/>
+      <provider copy-of="extension" id="org.eclipse.cdt.ui.UserLanguageSettingsProvider"/>
+      <provider-reference id="org.eclipse.cdt.managedbuilder.core.MBSLanguageSettingsProvider" ref="shared-provider"/>
+      <provider class="com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm" console="false" env-hash="-261417083" id="com.atollic.truestudio.mbs.provider" keep-relative-paths="false" name="Atollic ARM Tools Language Settings" parameter="${COMMAND} -E -P -v -dD &quot;${INPUTS}&quot;" prefer-non-shared="true">
+        <language-scope id="org.eclipse.cdt.core.gcc"/>
+        <language-scope id="org.eclipse.cdt.core.g++"/>
+      </provider>
+    </extension>
+  </configuration>
+  <configuration id=com.atollic.truestudio.exe.debug.511345388 name="S6E2HG4F_Release">
+    <extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
+      <provider copy-of="extension" id="org.eclipse.cdt.ui.UserLanguageSettingsProvider"/>
+      <provider copy-of="extension" id="org.eclipse.cdt.ui.UserLanguageSettingsProvider"/>
+      <provider-reference id="org.eclipse.cdt.managedbuilder.core.MBSLanguageSettingsProvider" ref="shared-provider"/>
+      <provider class="com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm" console="false" env-hash="-261417083" id="com.atollic.truestudio.mbs.provider" keep-relative-paths="false" name="Atollic ARM Tools Language Settings" parameter="${COMMAND} -E -P -v -dD &quot;${INPUTS}&quot;" prefer-non-shared="true">
+        <language-scope id="org.eclipse.cdt.core.gcc"/>
+        <language-scope id="org.eclipse.cdt.core.g++"/>
+      </provider>
+    </extension>
+  </configuration>
+  <configuration id=com.atollic.truestudio.exe.debug.701220518 name="S6E2HG6F_Debug">
+    <extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
+      <provider copy-of="extension" id="org.eclipse.cdt.ui.UserLanguageSettingsProvider"/>
+      <provider copy-of="extension" id="org.eclipse.cdt.ui.UserLanguageSettingsProvider"/>
+      <provider-reference id="org.eclipse.cdt.managedbuilder.core.MBSLanguageSettingsProvider" ref="shared-provider"/>
+      <provider class="com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm" console="false" env-hash="-261417083" id="com.atollic.truestudio.mbs.provider" keep-relative-paths="false" name="Atollic ARM Tools Language Settings" parameter="${COMMAND} -E -P -v -dD &quot;${INPUTS}&quot;" prefer-non-shared="true">
+        <language-scope id="org.eclipse.cdt.core.gcc"/>
+        <language-scope id="org.eclipse.cdt.core.g++"/>
+      </provider>
+    </extension>
+  </configuration>
+  <configuration id=com.atollic.truestudio.exe.debug.955878429 name="S6E2HG6F_Release">
+    <extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
+      <provider copy-of="extension" id="org.eclipse.cdt.ui.UserLanguageSettingsProvider"/>
+      <provider copy-of="extension" id="org.eclipse.cdt.ui.UserLanguageSettingsProvider"/>
+      <provider-reference id="org.eclipse.cdt.managedbuilder.core.MBSLanguageSettingsProvider" ref="shared-provider"/>
+      <provider class="com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm" console="false" env-hash="-261417083" id="com.atollic.truestudio.mbs.provider" keep-relative-paths="false" name="Atollic ARM Tools Language Settings" parameter="${COMMAND} -E -P -v -dD &quot;${INPUTS}&quot;" prefer-non-shared="true">
+        <language-scope id="org.eclipse.cdt.core.gcc"/>
+        <language-scope id="org.eclipse.cdt.core.g++"/>
+      </provider>
+    </extension>
+  </configuration>
+</project>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<flash_board>
+  <pass>
+    <loader>$PROJ_DIR$\flashloader\FlashS6E2GM_1MB.flash</loader>
+    <range>CODE 0x00000000 0x000FFFFF</range>
+  </pass>
+  <pass>
+    <loader>$PROJ_DIR$\flashloader\FlashS6E2GM_8KB.flash</loader>
+    <range>CODE 0x00406000 0x00407FFF</range>
+  </pass>
+</flash_board>

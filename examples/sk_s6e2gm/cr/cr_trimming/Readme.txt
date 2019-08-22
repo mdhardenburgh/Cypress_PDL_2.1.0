@@ -1,0 +1,67 @@
+================================================================================
+                               CR example program
+================================================================================
+version          1.10
+================================================================================
+Demonstrate the CR trimming procedure
+================================================================================
+Copyright 2016, Cypress Semiconductor Corporation. All rights reserved.
+You may use this file only in accordance with the license, terms, conditions,
+disclaimers, and limitations in the end user license agreement accompanying
+the software package with which this file was provided.
+CYPRESS PROVIDES THIS SOFTWARE "AS IS" AND MAKES NO WARRANTY
+OF ANY KIND, EXPRESS OR IMPLIED, WITH REGARD TO THIS SOFTWARE,
+INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+MERCHANTABILITY, NON-INFRINGEMENT AND FITNESS FOR A PARTICULAR
+PURPOSE.
+
+================================================================================
+Description
+
+This example demonstrates a CR trimming procedure.
+
+================================================================================
+How To Use This Code Example 
+
+* Start debug and run the project.
+* Watch the Terminal I/O window or UART debug interface (Debug viewer).
+* Uncomment following to watch with oscilloscope the CR frequency at CROUT_1:
+   /* SetPinFunc_CROUT_1(); */
+    
+Note:
+* Connect the scope directly to the pin of FM4 device (FM4-176L-S6E2GM kit does not 
+  have CROUT_1 routed to any of the connectors)
+* The printf content can be output to UART0 (SOT0_0). This is enabled with the 
+  DEBUG_PRINT definition in the pdl_user.h. You can disable the output to the 
+  terminal by removing DEBUG_PRINT definition from the pdl_user.h.
+
+================================================================================
+Terminal window setup
+
+Establish a connection to the board using your preferred terminal software. Each 
+terminal program has its own user interface. We assume you are familiar with how
+to change settings. This code example requires these settings for the connection.
+- Port: specify the serial port in use
+- Baud rate: 115200
+- Data: 8 bit
+- Parity: none
+- Stop bit: 1
+- Flow control: none
+
+================================================================================
+Build Environment
+
+This example works with
+* FM4-176L-S6E2GM Pioneer Kit
+* oscilloscope
+
+Project files are provided for
+* ARM GCC v 5.0
+* Atollic TrueStudio v 5.5.2
+* IAR Embedded Workbench v 7.50.1
+* iSystem winIDEA v 9.12
+* Keil uVision v 5.17
+
+This code example also requires
+* terminal software (for example, Cypress Serial Port Viewer and Terminal)
+================================================================================

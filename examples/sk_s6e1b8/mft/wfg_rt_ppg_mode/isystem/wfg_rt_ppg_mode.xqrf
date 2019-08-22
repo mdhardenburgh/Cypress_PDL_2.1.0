@@ -1,0 +1,1249 @@
+ <Root>
+  <REG_HEADER>
+   <Title>BF283F24-70B9-4f97-86E6-0AD5BAAE9E01</Title>
+   <VersionHigh>0</VersionHigh>
+   <VersionLow>1</VersionLow>
+  </REG_HEADER>
+  <REG_ROOT>
+   <RegVer>1259339776</RegVer>
+   <Project>
+    <CompilerType>0</CompilerType>
+    <GlobalOptions>
+     <AHeaderExtension>INC</AHeaderExtension>
+     <AInpExtensions>s</AInpExtensions>
+     <AOutExtensions>o</AOutExtensions>
+     <AsmAdditionalOutExt></AsmAdditionalOutExt>
+     <AssemblerRelPath>$(CMPDIR)bin\arm-none-eabi-gcc.exe</AssemblerRelPath>
+     <BeepWhenDone>1</BeepWhenDone>
+     <CaptureTranslatorsOutputAsm>1</CaptureTranslatorsOutputAsm>
+     <CaptureTranslatorsOutputCmp>1</CaptureTranslatorsOutputCmp>
+     <CaptureTranslatorsOutputLnk>1</CaptureTranslatorsOutputLnk>
+     <ChangeWorkingDirectory>1</ChangeWorkingDirectory>
+     <CInpExtensions>c;cpp</CInpExtensions>
+     <CmpAdditionalOutExt></CmpAdditionalOutExt>
+     <CompCmdLineIncPrefix>-I</CompCmdLineIncPrefix>
+     <CompCmdLinePostfix></CompCmdLinePostfix>
+     <CompCmdLinePrefix>-D</CompCmdLinePrefix>
+     <CompilerDirectory>$(EXEDIR)gcc\arm\</CompilerDirectory>
+     <CompilerRelPath>$(CMPDIR)bin\arm-none-eabi-gcc.exe</CompilerRelPath>
+     <CopyOutputFilesToTargetDir>1</CopyOutputFilesToTargetDir>
+     <COutExtensions>o</COutExtensions>
+     <DeleteTemporalyFiles>0</DeleteTemporalyFiles>
+     <DF_AllowBlanks>True</DF_AllowBlanks>
+     <DF_CheckSourceFileFolder>True</DF_CheckSourceFileFolder>
+     <DF_End></DF_End>
+     <DF_Keyword></DF_Keyword>
+     <DF_ReqBlanks>True</DF_ReqBlanks>
+     <DF_Start></DF_Start>
+     <DF_Valid>False</DF_Valid>
+     <DisplayParameters>0</DisplayParameters>
+     <ExecutableFileName>wfg_rt_ppg_mode.elf</ExecutableFileName>
+     <ExternalMake>0</ExternalMake>
+     <ExternalMakeFile></ExternalMakeFile>
+     <ExternalMakeFileParameters></ExternalMakeFileParameters>
+     <HeaderExtension>h</HeaderExtension>
+     <LinkerRelPath>$(CMPDIR)bin\arm-none-eabi-gcc.exe</LinkerRelPath>
+     <LInpExtensions>o;a</LInpExtensions>
+     <LnkAdditionalOutExt></LnkAdditionalOutExt>
+     <NewInvoke>0</NewInvoke>
+     <PathSeparator>\</PathSeparator>
+     <RootDir></RootDir>
+     <RunAfterAsm></RunAfterAsm>
+     <RunAfterAsmParam></RunAfterAsmParam>
+     <RunAfterComp></RunAfterComp>
+     <RunAfterCompParam></RunAfterCompParam>
+     <RunAfterLinker>$(CMPDIR)bin\arm-none-eabi-objcopy.exe</RunAfterLinker>
+     <RunAfterLinkerParam>$(CMPDIR) $(OUTPUTDIR) USBDBoot 9.6</RunAfterLinkerParam>
+     <RunBeforeBuild></RunBeforeBuild>
+     <RunBeforeBuildParam></RunBeforeBuildParam>
+     <RunBeforeMake></RunBeforeMake>
+     <RunBeforeMakeParam></RunBeforeMakeParam>
+     <RunCommandInterpreterAsm>1</RunCommandInterpreterAsm>
+     <RunCommandInterpreterCmp>1</RunCommandInterpreterCmp>
+     <RunCommandInterpreterLnk>1</RunCommandInterpreterLnk>
+     <RunWithRelativePath>0</RunWithRelativePath>
+     <ShowToolWindow>0</ShowToolWindow>
+     <WarnIncludes>0</WarnIncludes>
+     <Env.0>
+      <__></__>
+     </Env.0>
+     <Env.1>
+      <__></__>
+     </Env.1>
+     <IncludePath.0>
+      <Path>$(IRFDIR)..\..\..\..\..\cmsis\include</Path>
+      <SubDir>0</SubDir>
+     </IncludePath.0>
+     <IncludePath.1>
+      <Path>$(IRFDIR)..\..\..\..\..\devices\fm0p\s6e1b8xf\common</Path>
+      <SubDir>0</SubDir>
+     </IncludePath.1>
+     <IncludePath.2>
+      <Path>$(IRFDIR)..\..\..\..\..\drivers</Path>
+      <SubDir>0</SubDir>
+     </IncludePath.2>
+     <IncludePath.3>
+      <Path>$(IRFDIR)..\..\..\..\..\utilities</Path>
+      <SubDir>0</SubDir>
+     </IncludePath.3>
+     <IncludePath.4>
+      <Path>$(IRFDIR)..\</Path>
+      <SubDir>0</SubDir>
+     </IncludePath.4>
+     <mbBuild>
+      <Mode>0</Mode>
+      <Options></Options>
+      <Path></Path>
+     </mbBuild>
+     <mbMake>
+      <Mode>0</Mode>
+      <Options></Options>
+      <Path></Path>
+     </mbMake>
+    </GlobalOptions>
+    <Project.0>
+     <DefaultTargetName>Debug</DefaultTargetName>
+     <FilterName>GCC</FilterName>
+     <ProjectName></ProjectName>
+     <AdvancedLinkerOptions>
+      <AsmCustomFilterName></AsmCustomFilterName>
+      <AsmUseDefaultName>True</AsmUseDefaultName>
+      <CaptureErrOutOnly>False</CaptureErrOutOnly>
+      <CmpCustomFilterName>$(NOEXT).err</CmpCustomFilterName>
+      <CmpUseDefaultName>True</CmpUseDefaultName>
+      <ExternalFilterPath></ExternalFilterPath>
+      <LinkCustomFilterName>link.err</LinkCustomFilterName>
+      <LinkUseDefaultName>True</LinkUseDefaultName>
+      <UseExternalFilter>False</UseExternalFilter>
+     </AdvancedLinkerOptions>
+     <Target.0>
+      <TargetName>Debug</TargetName>
+      <FileOptios>
+       <AssemblerOptions> -mcpu=cortex-m0plus -mthumb -g3  -o $(OUTPUTDIR)$(NOEXT).o -c $(EDNAME)  -Wa,--defsym,Debug_RAM=1</AssemblerOptions>
+       <AssemblerOptionsWR>True</AssemblerOptionsWR>
+       <CompilerDefinesWR>True</CompilerDefinesWR>
+       <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+       <CompilerOptionsWR>True</CompilerOptionsWR>
+      </FileOptios>
+      <LinkGroup.0>
+       <LinkGroupName>common</LinkGroupName>
+       <File.0>
+        <FileName>$(IRFDIR)..\..\..\..\..\devices\fm0p\s6e1b8xf\common\system_s6e1b8.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.0>
+      </LinkGroup.0>
+      <LinkGroup.1>
+       <LinkGroupName>source</LinkGroupName>
+       <File.0>
+        <FileName>$(IRFDIR)..\main.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.0>
+       <File.1>
+        <FileName>$(IRFDIR)..\..\..\..\..\devices\fm0p\s6e1b8xf\projects\isystem\startup_s6e1b8.s</FileName>
+        <FileOptios>
+         <AssemblerOptions> -mcpu=cortex-m0plus -mthumb -g3  -o $(OUTPUTDIR)$(NOEXT).o -c $(EDNAME)  -Wa,--defsym,Debug_RAM=1</AssemblerOptions>
+        </FileOptios>
+       </File.1>
+      </LinkGroup.1>
+      <LinkGroup.2>
+       <LinkGroupName>config</LinkGroupName>
+       <File.0>
+        <FileName>$(IRFDIR)..\pdl_user.h</FileName>
+       </File.0>
+      </LinkGroup.2>
+      <LinkGroup.3>
+       <LinkGroupName>drivers</LinkGroupName>
+       <File.0>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\adc\adc.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.0>
+       <File.1>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\adc\adc.h</FileName>
+       </File.1>
+       <File.10>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\vbat\vbat.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.10>
+       <File.100>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\qprc\qprc.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.100>
+       <File.101>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\qprc\qprc.h</FileName>
+       </File.101>
+       <File.102>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\rc\rc.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.102>
+       <File.103>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\rc\rc.h</FileName>
+       </File.103>
+       <File.104>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\reset\reset.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.104>
+       <File.105>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\reset\reset.h</FileName>
+       </File.105>
+       <File.11>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\vbat\vbat.h</FileName>
+       </File.11>
+       <File.12>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\wc\wc.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.12>
+       <File.13>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\wc\wc.h</FileName>
+       </File.13>
+       <File.14>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\wdg\hwwdg.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.14>
+       <File.15>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\cr\cr.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.15>
+       <File.16>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\wdg\hwwdg.h</FileName>
+       </File.16>
+       <File.17>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\wdg\swwdg.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.17>
+       <File.18>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\wdg\swwdg.h</FileName>
+       </File.18>
+       <File.19>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\wdg\wdg.h</FileName>
+       </File.19>
+       <File.2>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\clk\clk.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.2>
+       <File.20>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\cr\cr.h</FileName>
+       </File.20>
+       <File.21>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\crc\crc.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.21>
+       <File.22>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\crc\crc.h</FileName>
+       </File.22>
+       <File.23>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\csv\csv.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.23>
+       <File.24>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\csv\csv.h</FileName>
+       </File.24>
+       <File.25>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\dac\dac.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.25>
+       <File.26>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\dac\dac.h</FileName>
+       </File.26>
+       <File.27>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\bt\bt.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.27>
+       <File.28>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\dma\dma.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.28>
+       <File.29>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\dma\dma.h</FileName>
+       </File.29>
+       <File.3>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\rtc\rtc.h</FileName>
+       </File.3>
+       <File.30>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\dstc\dstc.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.30>
+       <File.31>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\dstc\dstc.h</FileName>
+       </File.31>
+       <File.32>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\dt\dt.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.32>
+       <File.33>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\dt\dt.h</FileName>
+       </File.33>
+       <File.34>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\bt\bt.h</FileName>
+       </File.34>
+       <File.35>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\exint\exint.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.35>
+       <File.36>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\exint\exint.h</FileName>
+       </File.36>
+       <File.37>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\extif\extif.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.37>
+       <File.38>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\extif\extif.h</FileName>
+       </File.38>
+       <File.39>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\flash\dualflash.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.39>
+       <File.4>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\sdif\sdif.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.4>
+       <File.40>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\flash\dualflash.h</FileName>
+       </File.40>
+       <File.41>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\flash\mainflash.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.41>
+       <File.42>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\flash\mainflash.h</FileName>
+       </File.42>
+       <File.43>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\flash\workflash.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.43>
+       <File.44>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\flash\workflash.h</FileName>
+       </File.44>
+       <File.45>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\can\can.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.45>
+       <File.46>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\hbif\hbif.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.46>
+       <File.47>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\hbif\hbif.h</FileName>
+       </File.47>
+       <File.48>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\hsspi\hsspi.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.48>
+       <File.49>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\hsspi\hsspi.h</FileName>
+       </File.49>
+       <File.5>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\sdif\sdif.h</FileName>
+       </File.5>
+       <File.50>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\i2cs\i2cs.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.50>
+       <File.51>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\i2cs\i2cs.h</FileName>
+       </File.51>
+       <File.52>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\i2s\i2s.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.52>
+       <File.53>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\i2s\i2s.h</FileName>
+       </File.53>
+       <File.54>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\can\can.h</FileName>
+       </File.54>
+       <File.55>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\icc\icc.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.55>
+       <File.56>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\icc\icc.h</FileName>
+       </File.56>
+       <File.57>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\interrupts_fm0p.h</FileName>
+       </File.57>
+       <File.58>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\interrupts_fm0p_type_1-a.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.58>
+       <File.59>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\interrupts_fm0p_type_1-b.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.59>
+       <File.6>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\rtc\rtc.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.6>
+       <File.60>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\interrupts_fm0p_type_2-a.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.60>
+       <File.61>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\interrupts_fm0p_type_2-b.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.61>
+       <File.62>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\interrupts_fm0p_type_3.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.62>
+       <File.63>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\can\can_pre.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.63>
+       <File.64>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\interrupts_fm3.h</FileName>
+       </File.64>
+       <File.65>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\interrupts_fm3_type_a.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.65>
+       <File.66>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\interrupts_fm3_type_b.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.66>
+       <File.67>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\interrupts_fm3_type_c.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.67>
+       <File.68>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\interrupts_fm4.h</FileName>
+       </File.68>
+       <File.69>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\interrupts_fm4_type_a.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.69>
+       <File.7>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\uid\uid.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.7>
+       <File.70>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\interrupts_fm4_type_b.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.70>
+       <File.71>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\interrupts_fm4_type_c.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.71>
+       <File.72>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\lcd\lcd.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.72>
+       <File.73>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\lcd\lcd.h</FileName>
+       </File.73>
+       <File.74>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\can\can_pre.h</FileName>
+       </File.74>
+       <File.75>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\lpm\lpm.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.75>
+       <File.76>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\lpm\lpm.h</FileName>
+       </File.76>
+       <File.77>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\lvd\lvd.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.77>
+       <File.78>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\lvd\lvd.h</FileName>
+       </File.78>
+       <File.79>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\mfs\mfs.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.79>
+       <File.8>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\uid\uid.h</FileName>
+       </File.8>
+       <File.80>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\mfs\mfs.h</FileName>
+       </File.80>
+       <File.81>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\mft\mft_adcmp.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.81>
+       <File.82>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\mft\mft_adcmp.h</FileName>
+       </File.82>
+       <File.83>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\mft\mft_frt.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.83>
+       <File.84>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\mft\mft_frt.h</FileName>
+       </File.84>
+       <File.85>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\can\canfd.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.85>
+       <File.86>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\mft\mft_icu.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.86>
+       <File.87>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\mft\mft_icu.h</FileName>
+       </File.87>
+       <File.88>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\mft\mft_ocu.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.88>
+       <File.89>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\mft\mft_ocu.h</FileName>
+       </File.89>
+       <File.9>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\clk\clk.h</FileName>
+       </File.9>
+       <File.90>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\mft\mft_wfg.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.90>
+       <File.91>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\mft\mft_wfg.h</FileName>
+       </File.91>
+       <File.92>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\pcrc\pcrc.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.92>
+       <File.93>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\pcrc\pcrc.h</FileName>
+       </File.93>
+       <File.94>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\pdl.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.94>
+       <File.95>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\pdl.h</FileName>
+       </File.95>
+       <File.96>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\can\canfd.h</FileName>
+       </File.96>
+       <File.97>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\pdl_header.h</FileName>
+       </File.97>
+       <File.98>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\ppg\ppg.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.98>
+       <File.99>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\ppg\ppg.h</FileName>
+       </File.99>
+      </LinkGroup.3>
+      <LinkGroup.4>
+       <LinkGroupName>utilities</LinkGroupName>
+       <File.0>
+        <FileName>$(IRFDIR)..\..\..\..\..\utilities\printf_scanf\uart_io.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.0>
+      </LinkGroup.4>
+      <TargetOptios>
+       <AsmArgFile></AsmArgFile>
+       <BuildOptions></BuildOptions>
+       <CompArgFile></CompArgFile>
+       <CRLF>True</CRLF>
+       <ExternalMakeFileParameters></ExternalMakeFileParameters>
+       <IndFileLocation>2</IndFileLocation>
+       <IndirectionFile>$(IRFDIR)..\..\..\..\..\devices\fm0p\s6e1b8xf\projects\isystem\linker\s6e1b86_ram.ld</IndirectionFile>
+       <LinkerOptions>-mthumb -mcpu=cortex-m0plus  -nostartfiles  -Xlinker --output=$(OUTPUTFILE)  -Xlinker  -Map=$(OUTPUTNOEXT).map  -Xlinker  --script=$(INDPATH)  -Xlinker  -n  -nostdlib  -nodefaultlibs  -fno-exceptions --specs=nano.specs -lc -lnosys -Xlinker --gc-sections</LinkerOptions>
+       <MakeOptions></MakeOptions>
+       <RunAfterLinkParam>-O srec $(OUTPUTPATH) $(OUTPUTNOEXT).srec</RunAfterLinkParam>
+       <SkipObjectCheck>False</SkipObjectCheck>
+       <TargetDirectory>debug</TargetDirectory>
+       <TargetDirectory2>s6e1b8xf_debug</TargetDirectory2>
+       <TranslateCharacter>38</TranslateCharacter>
+       <UseTargetDirectory2>No</UseTargetDirectory2>
+      </TargetOptios>
+     </Target.0>
+     <Target.1>
+      <TargetName>Release</TargetName>
+      <FileOptios>
+       <AssemblerOptions> -mcpu=cortex-m0plus -mthumb -g3  -o $(OUTPUTDIR)$(NOEXT).o -c $(EDNAME)</AssemblerOptions>
+       <AssemblerOptionsWR>True</AssemblerOptionsWR>
+       <CompilerDefinesWR>True</CompilerDefinesWR>
+       <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+       <CompilerOptionsWR>True</CompilerOptionsWR>
+      </FileOptios>
+      <LinkGroup.0>
+       <LinkGroupName>common</LinkGroupName>
+       <File.0>
+        <FileName>$(IRFDIR)..\..\..\..\..\devices\fm0p\s6e1b8xf\common\system_s6e1b8.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.0>
+      </LinkGroup.0>
+      <LinkGroup.1>
+       <LinkGroupName>source</LinkGroupName>
+       <File.0>
+        <FileName>$(IRFDIR)..\main.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.0>
+       <File.1>
+        <FileName>$(IRFDIR)..\..\..\..\..\devices\fm0p\s6e1b8xf\projects\isystem\startup_s6e1b8.s</FileName>
+        <FileOptios>
+         <AssemblerOptions> -mcpu=cortex-m0plus -mthumb -g3  -o $(OUTPUTDIR)$(NOEXT).o -c $(EDNAME)</AssemblerOptions>
+        </FileOptios>
+       </File.1>
+      </LinkGroup.1>
+      <LinkGroup.2>
+       <LinkGroupName>config</LinkGroupName>
+       <File.0>
+        <FileName>$(IRFDIR)..\pdl_user.h</FileName>
+       </File.0>
+      </LinkGroup.2>
+      <LinkGroup.3>
+       <LinkGroupName>drivers</LinkGroupName>
+       <File.0>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\adc\adc.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.0>
+       <File.1>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\adc\adc.h</FileName>
+       </File.1>
+       <File.10>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\vbat\vbat.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.10>
+       <File.100>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\qprc\qprc.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.100>
+       <File.101>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\qprc\qprc.h</FileName>
+       </File.101>
+       <File.102>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\rc\rc.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.102>
+       <File.103>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\rc\rc.h</FileName>
+       </File.103>
+       <File.104>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\reset\reset.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.104>
+       <File.105>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\reset\reset.h</FileName>
+       </File.105>
+       <File.11>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\vbat\vbat.h</FileName>
+       </File.11>
+       <File.12>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\wc\wc.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.12>
+       <File.13>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\wc\wc.h</FileName>
+       </File.13>
+       <File.14>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\wdg\hwwdg.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.14>
+       <File.15>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\cr\cr.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.15>
+       <File.16>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\wdg\hwwdg.h</FileName>
+       </File.16>
+       <File.17>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\wdg\swwdg.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.17>
+       <File.18>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\wdg\swwdg.h</FileName>
+       </File.18>
+       <File.19>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\wdg\wdg.h</FileName>
+       </File.19>
+       <File.2>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\clk\clk.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.2>
+       <File.20>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\cr\cr.h</FileName>
+       </File.20>
+       <File.21>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\crc\crc.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.21>
+       <File.22>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\crc\crc.h</FileName>
+       </File.22>
+       <File.23>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\csv\csv.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.23>
+       <File.24>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\csv\csv.h</FileName>
+       </File.24>
+       <File.25>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\dac\dac.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.25>
+       <File.26>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\dac\dac.h</FileName>
+       </File.26>
+       <File.27>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\bt\bt.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.27>
+       <File.28>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\dma\dma.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.28>
+       <File.29>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\dma\dma.h</FileName>
+       </File.29>
+       <File.3>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\rtc\rtc.h</FileName>
+       </File.3>
+       <File.30>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\dstc\dstc.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.30>
+       <File.31>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\dstc\dstc.h</FileName>
+       </File.31>
+       <File.32>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\dt\dt.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.32>
+       <File.33>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\dt\dt.h</FileName>
+       </File.33>
+       <File.34>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\bt\bt.h</FileName>
+       </File.34>
+       <File.35>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\exint\exint.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.35>
+       <File.36>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\exint\exint.h</FileName>
+       </File.36>
+       <File.37>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\extif\extif.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.37>
+       <File.38>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\extif\extif.h</FileName>
+       </File.38>
+       <File.39>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\flash\dualflash.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.39>
+       <File.4>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\sdif\sdif.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.4>
+       <File.40>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\flash\dualflash.h</FileName>
+       </File.40>
+       <File.41>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\flash\mainflash.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.41>
+       <File.42>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\flash\mainflash.h</FileName>
+       </File.42>
+       <File.43>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\flash\workflash.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.43>
+       <File.44>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\flash\workflash.h</FileName>
+       </File.44>
+       <File.45>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\can\can.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.45>
+       <File.46>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\hbif\hbif.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.46>
+       <File.47>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\hbif\hbif.h</FileName>
+       </File.47>
+       <File.48>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\hsspi\hsspi.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.48>
+       <File.49>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\hsspi\hsspi.h</FileName>
+       </File.49>
+       <File.5>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\sdif\sdif.h</FileName>
+       </File.5>
+       <File.50>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\i2cs\i2cs.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.50>
+       <File.51>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\i2cs\i2cs.h</FileName>
+       </File.51>
+       <File.52>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\i2s\i2s.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.52>
+       <File.53>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\i2s\i2s.h</FileName>
+       </File.53>
+       <File.54>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\can\can.h</FileName>
+       </File.54>
+       <File.55>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\icc\icc.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.55>
+       <File.56>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\icc\icc.h</FileName>
+       </File.56>
+       <File.57>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\interrupts_fm0p.h</FileName>
+       </File.57>
+       <File.58>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\interrupts_fm0p_type_1-a.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.58>
+       <File.59>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\interrupts_fm0p_type_1-b.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.59>
+       <File.6>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\rtc\rtc.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.6>
+       <File.60>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\interrupts_fm0p_type_2-a.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.60>
+       <File.61>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\interrupts_fm0p_type_2-b.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.61>
+       <File.62>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\interrupts_fm0p_type_3.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.62>
+       <File.63>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\can\can_pre.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.63>
+       <File.64>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\interrupts_fm3.h</FileName>
+       </File.64>
+       <File.65>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\interrupts_fm3_type_a.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.65>
+       <File.66>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\interrupts_fm3_type_b.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.66>
+       <File.67>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\interrupts_fm3_type_c.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.67>
+       <File.68>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\interrupts_fm4.h</FileName>
+       </File.68>
+       <File.69>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\interrupts_fm4_type_a.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.69>
+       <File.7>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\uid\uid.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.7>
+       <File.70>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\interrupts_fm4_type_b.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.70>
+       <File.71>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\interrupts_fm4_type_c.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.71>
+       <File.72>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\lcd\lcd.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.72>
+       <File.73>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\lcd\lcd.h</FileName>
+       </File.73>
+       <File.74>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\can\can_pre.h</FileName>
+       </File.74>
+       <File.75>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\lpm\lpm.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.75>
+       <File.76>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\lpm\lpm.h</FileName>
+       </File.76>
+       <File.77>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\lvd\lvd.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.77>
+       <File.78>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\lvd\lvd.h</FileName>
+       </File.78>
+       <File.79>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\mfs\mfs.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.79>
+       <File.8>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\uid\uid.h</FileName>
+       </File.8>
+       <File.80>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\mfs\mfs.h</FileName>
+       </File.80>
+       <File.81>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\mft\mft_adcmp.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.81>
+       <File.82>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\mft\mft_adcmp.h</FileName>
+       </File.82>
+       <File.83>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\mft\mft_frt.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.83>
+       <File.84>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\mft\mft_frt.h</FileName>
+       </File.84>
+       <File.85>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\can\canfd.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.85>
+       <File.86>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\mft\mft_icu.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.86>
+       <File.87>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\mft\mft_icu.h</FileName>
+       </File.87>
+       <File.88>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\mft\mft_ocu.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.88>
+       <File.89>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\mft\mft_ocu.h</FileName>
+       </File.89>
+       <File.9>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\clk\clk.h</FileName>
+       </File.9>
+       <File.90>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\mft\mft_wfg.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.90>
+       <File.91>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\mft\mft_wfg.h</FileName>
+       </File.91>
+       <File.92>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\pcrc\pcrc.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.92>
+       <File.93>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\pcrc\pcrc.h</FileName>
+       </File.93>
+       <File.94>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\pdl.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.94>
+       <File.95>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\pdl.h</FileName>
+       </File.95>
+       <File.96>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\can\canfd.h</FileName>
+       </File.96>
+       <File.97>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\pdl_header.h</FileName>
+       </File.97>
+       <File.98>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\ppg\ppg.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.98>
+       <File.99>
+        <FileName>$(IRFDIR)..\..\..\..\..\drivers\ppg\ppg.h</FileName>
+       </File.99>
+      </LinkGroup.3>
+      <LinkGroup.4>
+       <LinkGroupName>utilities</LinkGroupName>
+       <File.0>
+        <FileName>$(IRFDIR)..\..\..\..\..\utilities\printf_scanf\uart_io.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m0plus  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -fdata-sections -ffunction-sections</CompilerOptions>
+        </FileOptios>
+       </File.0>
+      </LinkGroup.4>
+      <TargetOptios>
+       <AsmArgFile></AsmArgFile>
+       <BuildOptions></BuildOptions>
+       <CompArgFile></CompArgFile>
+       <CRLF>True</CRLF>
+       <ExternalMakeFileParameters></ExternalMakeFileParameters>
+       <IndFileLocation>2</IndFileLocation>
+       <IndirectionFile>$(IRFDIR)..\..\..\..\..\devices\fm0p\s6e1b8xf\projects\isystem\linker\s6e1b86_rom.ld</IndirectionFile>
+       <LinkerOptions>-mthumb -mcpu=cortex-m0plus  -nostartfiles  -Xlinker --output=$(OUTPUTFILE)  -Xlinker  -Map=$(OUTPUTNOEXT).map  -Xlinker  --script=$(INDPATH)  -Xlinker  -n  -nostdlib  -nodefaultlibs  -fno-exceptions --specs=nano.specs -lc -lnosys -Xlinker --gc-sections</LinkerOptions>
+       <MakeOptions></MakeOptions>
+       <RunAfterLinkParam>-O srec $(OUTPUTPATH) $(OUTPUTNOEXT).srec</RunAfterLinkParam>
+       <SkipObjectCheck>False</SkipObjectCheck>
+       <TargetDirectory>release</TargetDirectory>
+       <TargetDirectory2>s6e1b8xf_release</TargetDirectory2>
+       <TranslateCharacter>38</TranslateCharacter>
+       <UseTargetDirectory2>No</UseTargetDirectory2>
+      </TargetOptios>
+     </Target.1>
+     <TargetOptions>
+      <AsmArgFile></AsmArgFile>
+      <BuildOptions></BuildOptions>
+      <CompArgFile></CompArgFile>
+      <CRLF>False</CRLF>
+      <ExternalMakeFileParameters></ExternalMakeFileParameters>
+      <IndFileLocation>0</IndFileLocation>
+      <IndirectionFile></IndirectionFile>
+      <LinkerOptions></LinkerOptions>
+      <MakeOptions></MakeOptions>
+      <RunAfterLinkParam>$(CMPDIR) $(OUTPUTDIR) USBDBoot 9.6</RunAfterLinkParam>
+      <SkipObjectCheck>False</SkipObjectCheck>
+      <TargetDirectory></TargetDirectory>
+      <TargetDirectory2></TargetDirectory2>
+      <TranslateCharacter>38</TranslateCharacter>
+      <UseTargetDirectory2>No</UseTargetDirectory2>
+     </TargetOptions>
+    </Project.0>
+   </Project>
+  </REG_ROOT>
+ </Root>

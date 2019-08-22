@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+    <?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+        <storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="com.atollic.truestudio.exe.debug.580095724">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.atollic.truestudio.exe.debug.580095724" moduleId="org.eclipse.cdt.core.settings" name="MB9BF164_Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="elf" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="rm -rf" description="" id="com.atollic.truestudio.exe.debug.580095724" name="MB9BF164_Debug" parent="com.atollic.truestudio.exe.debug">
+					<folderInfo id="com.atollic.truestudio.exe.debug.580095724." name="/" resourcePath="">
+						<toolChain id="com.atollic.truestudio.exe.debug.toolchain.73463963" name="Atollic ARM Tools" superClass="com.atollic.truestudio.exe.debug.toolchain">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="com.atollic.truestudio.exe.debug.toolchain.platform.590528366" isAbstract="false" name="Debug platform" superClass="com.atollic.truestudio.exe.debug.toolchain.platform"/>
+							<builder buildPath="${workspace_loc:/mb9bf16xl_template/MB9BF164_Debug}" id="com.atollic.truestudio.mbs.builder1.145442251" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="CDT Internal Builder" superClass="com.atollic.truestudio.mbs.builder1">
+								<outputEntries>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="MB9BF164_Debug"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="MB9BF164_Debug"/>
+								</outputEntries>
+							</builder>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.as.1230599102" name="Assembler" superClass="com.atollic.truestudio.exe.debug.toolchain.as">
+								<option id="com.atollic.truestudio.common_options.target.endianess.1332562752" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess" value="com.atollic.truestudio.common_options.target.endianess.little" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.446345325" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="Cortex-M4" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.370072367" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.812230898" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu" value="com.atollic.truestudio.common_options.target.fpu.hard" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.as.symbols.defined.1444623263" name="Defined symbols" superClass="com.atollic.truestudio.as.symbols.defined"/>
+								<option id="com.atollic.truestudio.as.general.incpath.506583303" name="Include path" superClass="com.atollic.truestudio.as.general.incpath"/>
+								<option id="com.atollic.truestudio.common_options.target.fpucore.636544609" name="FPU" superClass="com.atollic.truestudio.common_options.target.fpucore" value="FPv4-SP-D16" valueType="enumerated"/>
+								<inputType id="com.atollic.truestudio.as.input.1084095138" name="Input" superClass="com.atollic.truestudio.as.input"/>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.gcc.1347815291" name="C Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gcc">
+								<option id="com.atollic.truestudio.gcc.symbols.defined.412000922" name="Defined symbols" superClass="com.atollic.truestudio.gcc.symbols.defined"/>
+								<option id="com.atollic.truestudio.gcc.directories.select.2125920078" name="Include path" superClass="com.atollic.truestudio.gcc.directories.select" valueType="includePath">
+									<listOptionValue builtIn="false" value="../../../common"/>
+									<listOptionValue builtIn="false" value="../../../../../../cmsis/include"/>
+								</option>
+								<option id="com.atollic.truestudio.common_options.target.endianess.49279756" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess" value="com.atollic.truestudio.common_options.target.endianess.little" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.1088043665" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="Cortex-M4" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.396024402" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.1715213345" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu" value="com.atollic.truestudio.common_options.target.fpu.hard" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.gcc.optimization.prep_garbage.798816866" name="Prepare dead code removal " superClass="com.atollic.truestudio.gcc.optimization.prep_garbage" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.gcc.optimization.prep_data.219820427" name="Prepare dead data removal" superClass="com.atollic.truestudio.gcc.optimization.prep_data" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.common_options.target.fpucore.277768432" name="FPU" superClass="com.atollic.truestudio.common_options.target.fpucore" value="FPv4-SP-D16" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.interwork.795713134" name="Mix ARM/Thumb" superClass="com.atollic.truestudio.common_options.target.interwork"/>
+								<inputType id="com.atollic.truestudio.gcc.input.875031923" superClass="com.atollic.truestudio.gcc.input"/>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.ld.1272506718" name="C Linker" superClass="com.atollic.truestudio.exe.debug.toolchain.ld">
+								<option id="com.atollic.truestudio.common_options.target.endianess.215572348" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess" value="com.atollic.truestudio.common_options.target.endianess.little" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.1555246259" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="Cortex-M4" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.1983184305" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.1536999708" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu" value="com.atollic.truestudio.common_options.target.fpu.hard" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.ld.general.scriptfile.1595079138" name="Linker script" superClass="com.atollic.truestudio.ld.general.scriptfile" value="..\linker\mb9b164_ram.ld" valueType="string"/>
+								<option id="com.atollic.truestudio.ld.optimization.do_garbage.1877367382" name="Dead code removal " superClass="com.atollic.truestudio.ld.optimization.do_garbage" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.ld.libraries.list.1126391755" name="Libraries" superClass="com.atollic.truestudio.ld.libraries.list"/>
+								<option id="com.atollic.truestudio.common_options.target.fpucore.333763228" name="FPU" superClass="com.atollic.truestudio.common_options.target.fpucore" value="FPv4-SP-D16" valueType="enumerated"/>
+								<inputType id="com.atollic.truestudio.ld.input.2113934979" name="Input" superClass="com.atollic.truestudio.ld.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.gpp.1941614936" name="C++ Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gpp">
+								<option id="com.atollic.truestudio.gpp.symbols.defined.1064415248" name="Defined symbols" superClass="com.atollic.truestudio.gpp.symbols.defined" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="MB9BF164"/>
+								</option>
+								<option id="com.atollic.truestudio.common_options.target.endianess.1261675741" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess" value="com.atollic.truestudio.common_options.target.endianess.little" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.132747070" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="Cortex-M4" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.1480295732" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.709759501" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu" value="com.atollic.truestudio.common_options.target.fpu.hard" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.gpp.optimization.prep_garbage.973227669" name="Prepare dead code removal" superClass="com.atollic.truestudio.gpp.optimization.prep_garbage" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.gpp.optimization.prep_data.824677650" name="Prepare dead data removal" superClass="com.atollic.truestudio.gpp.optimization.prep_data" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.gpp.optimization.fno_rtti.185377591" name="Disable RTTI" superClass="com.atollic.truestudio.gpp.optimization.fno_rtti"/>
+								<option id="com.atollic.truestudio.gpp.optimization.fno_exceptions.654459676" name="Disable exception handling" superClass="com.atollic.truestudio.gpp.optimization.fno_exceptions"/>
+                						<option id="com.atollic.truestudio.common_options.target.fpucore.333763228" name="FPU" superClass="com.atollic.truestudio.common_options.target.fpucore" value="FPv4-SP-D16" valueType="enumerated"/>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.ldcc.54263900" name="C++ Linker" superClass="com.atollic.truestudio.exe.debug.toolchain.ldcc">
+								<option id="com.atollic.truestudio.common_options.target.endianess.256779878" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess" value="com.atollic.truestudio.common_options.target.endianess.little" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.625509149" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="Cortex-M4" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.181312675" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.1991207502" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu" value="com.atollic.truestudio.common_options.target.fpu.hard" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.ldcc.optimization.do_garbage.842892106" name="Dead code removal" superClass="com.atollic.truestudio.ldcc.optimization.do_garbage" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.ldcc.general.scriptfile.1013868757" name="Linker script" superClass="com.atollic.truestudio.ldcc.general.scriptfile" value="..\linker\mb9b164_ram.ld" valueType="string"/>
+                						<option id="com.atollic.truestudio.common_options.target.fpucore.333763228" name="FPU" superClass="com.atollic.truestudio.common_options.target.fpucore" value="FPv4-SP-D16" valueType="enumerated"/>
+                						<option id="com.atollic.truestudio.ldcc.libraries.list.2132191023" name="Libraries" superClass="com.atollic.truestudio.ldcc.libraries.list" valueType="libs">
+									<listOptionValue builtIn="false" value="m"/>
+								</option>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.secoutput.1090045790" name="Other" superClass="com.atollic.truestudio.exe.debug.toolchain.secoutput"/>
+							<tool id="com.atollic.truestudio.ar.base.1192817072" name="Archiver" superClass="com.atollic.truestudio.ar.base"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="library/examples" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="com.atollic.truestudio.exe.debug.448828750">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.atollic.truestudio.exe.debug.448828750" moduleId="org.eclipse.cdt.core.settings" name="MB9BF164_Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="elf" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="rm -rf" description="" id="com.atollic.truestudio.exe.debug.448828750" name="MB9BF164_Release" parent="com.atollic.truestudio.exe.debug">
+					<folderInfo id="com.atollic.truestudio.exe.debug.448828750." name="/" resourcePath="">
+						<toolChain id="com.atollic.truestudio.exe.debug.toolchain.73463963" name="Atollic ARM Tools" superClass="com.atollic.truestudio.exe.debug.toolchain">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="com.atollic.truestudio.exe.debug.toolchain.platform.590528366" isAbstract="false" name="Debug platform" superClass="com.atollic.truestudio.exe.debug.toolchain.platform"/>
+							<builder buildPath="${workspace_loc:/mb9bf16xl_template/MB9BF164_Release}" id="com.atollic.truestudio.mbs.builder1.145442251" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="CDT Internal Builder" superClass="com.atollic.truestudio.mbs.builder1">
+								<outputEntries>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="MB9BF164_Release"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="MB9BF164_Release"/>
+								</outputEntries>
+							</builder>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.as.1230599102" name="Assembler" superClass="com.atollic.truestudio.exe.debug.toolchain.as">
+								<option id="com.atollic.truestudio.common_options.target.endianess.1332562752" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess" value="com.atollic.truestudio.common_options.target.endianess.little" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.446345325" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="Cortex-M4" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.370072367" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.812230898" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu" value="com.atollic.truestudio.common_options.target.fpu.hard" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.as.symbols.defined.1444623263" name="Defined symbols" superClass="com.atollic.truestudio.as.symbols.defined"/>
+								<option id="com.atollic.truestudio.as.general.incpath.506583303" name="Include path" superClass="com.atollic.truestudio.as.general.incpath"/>
+								<option id="com.atollic.truestudio.common_options.target.fpucore.636544609" name="FPU" superClass="com.atollic.truestudio.common_options.target.fpucore" value="FPv4-SP-D16" valueType="enumerated"/>
+								<inputType id="com.atollic.truestudio.as.input.1084095138" name="Input" superClass="com.atollic.truestudio.as.input"/>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.gcc.1347815291" name="C Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gcc">
+								<option id="com.atollic.truestudio.gcc.symbols.defined.412000922" name="Defined symbols" superClass="com.atollic.truestudio.gcc.symbols.defined"/>
+								<option id="com.atollic.truestudio.gcc.directories.select.2125920078" name="Include path" superClass="com.atollic.truestudio.gcc.directories.select" valueType="includePath">
+									<listOptionValue builtIn="false" value="../../../common"/>
+									<listOptionValue builtIn="false" value="../../../../../../cmsis/include"/>
+								</option>
+								<option id="com.atollic.truestudio.common_options.target.endianess.49279756" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess" value="com.atollic.truestudio.common_options.target.endianess.little" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.1088043665" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="Cortex-M4" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.396024402" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.1715213345" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu" value="com.atollic.truestudio.common_options.target.fpu.hard" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.gcc.optimization.prep_garbage.798816866" name="Prepare dead code removal " superClass="com.atollic.truestudio.gcc.optimization.prep_garbage" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.gcc.optimization.prep_data.219820427" name="Prepare dead data removal" superClass="com.atollic.truestudio.gcc.optimization.prep_data" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.common_options.target.fpucore.277768432" name="FPU" superClass="com.atollic.truestudio.common_options.target.fpucore" value="FPv4-SP-D16" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.interwork.795713134" name="Mix ARM/Thumb" superClass="com.atollic.truestudio.common_options.target.interwork"/>
+								<inputType id="com.atollic.truestudio.gcc.input.875031923" superClass="com.atollic.truestudio.gcc.input"/>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.ld.1272506718" name="C Linker" superClass="com.atollic.truestudio.exe.debug.toolchain.ld">
+								<option id="com.atollic.truestudio.common_options.target.endianess.215572348" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess" value="com.atollic.truestudio.common_options.target.endianess.little" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.1555246259" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="Cortex-M4" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.1983184305" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.1536999708" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu" value="com.atollic.truestudio.common_options.target.fpu.hard" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.ld.general.scriptfile.1595079138" name="Linker script" superClass="com.atollic.truestudio.ld.general.scriptfile" value="..\linker\mb9b164_rom.ld" valueType="string"/>
+								<option id="com.atollic.truestudio.ld.optimization.do_garbage.1877367382" name="Dead code removal " superClass="com.atollic.truestudio.ld.optimization.do_garbage" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.ld.libraries.list.1126391755" name="Libraries" superClass="com.atollic.truestudio.ld.libraries.list"/>
+								<option id="com.atollic.truestudio.common_options.target.fpucore.333763228" name="FPU" superClass="com.atollic.truestudio.common_options.target.fpucore" value="FPv4-SP-D16" valueType="enumerated"/>
+								<inputType id="com.atollic.truestudio.ld.input.2113934979" name="Input" superClass="com.atollic.truestudio.ld.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.gpp.1941614936" name="C++ Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gpp">
+								<option id="com.atollic.truestudio.gpp.symbols.defined.1064415248" name="Defined symbols" superClass="com.atollic.truestudio.gpp.symbols.defined" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="MB9BF164"/>
+								</option>
+								<option id="com.atollic.truestudio.common_options.target.endianess.1261675741" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess" value="com.atollic.truestudio.common_options.target.endianess.little" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.132747070" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="Cortex-M4" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.1480295732" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.709759501" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu" value="com.atollic.truestudio.common_options.target.fpu.hard" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.gpp.optimization.prep_garbage.973227669" name="Prepare dead code removal" superClass="com.atollic.truestudio.gpp.optimization.prep_garbage" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.gpp.optimization.prep_data.824677650" name="Prepare dead data removal" superClass="com.atollic.truestudio.gpp.optimization.prep_data" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.gpp.optimization.fno_rtti.185377591" name="Disable RTTI" superClass="com.atollic.truestudio.gpp.optimization.fno_rtti"/>
+								<option id="com.atollic.truestudio.gpp.optimization.fno_exceptions.654459676" name="Disable exception handling" superClass="com.atollic.truestudio.gpp.optimization.fno_exceptions"/>
+                						<option id="com.atollic.truestudio.common_options.target.fpucore.333763228" name="FPU" superClass="com.atollic.truestudio.common_options.target.fpucore" value="FPv4-SP-D16" valueType="enumerated"/>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.ldcc.54263900" name="C++ Linker" superClass="com.atollic.truestudio.exe.debug.toolchain.ldcc">
+								<option id="com.atollic.truestudio.common_options.target.endianess.256779878" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess" value="com.atollic.truestudio.common_options.target.endianess.little" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.625509149" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="Cortex-M4" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.181312675" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.1991207502" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu" value="com.atollic.truestudio.common_options.target.fpu.hard" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.ldcc.optimization.do_garbage.842892106" name="Dead code removal" superClass="com.atollic.truestudio.ldcc.optimization.do_garbage" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.ldcc.general.scriptfile.1013868757" name="Linker script" superClass="com.atollic.truestudio.ldcc.general.scriptfile" value="..\linker\mb9b164_rom.ld" valueType="string"/>
+                						<option id="com.atollic.truestudio.common_options.target.fpucore.333763228" name="FPU" superClass="com.atollic.truestudio.common_options.target.fpucore" value="FPv4-SP-D16" valueType="enumerated"/>
+                						<option id="com.atollic.truestudio.ldcc.libraries.list.2132191023" name="Libraries" superClass="com.atollic.truestudio.ldcc.libraries.list" valueType="libs">
+									<listOptionValue builtIn="false" value="m"/>
+								</option>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.secoutput.1090045790" name="Other" superClass="com.atollic.truestudio.exe.debug.toolchain.secoutput"/>
+							<tool id="com.atollic.truestudio.ar.base.1192817072" name="Archiver" superClass="com.atollic.truestudio.ar.base"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="library/examples" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="com.atollic.truestudio.exe.debug.382034542">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.atollic.truestudio.exe.debug.382034542" moduleId="org.eclipse.cdt.core.settings" name="MB9BF165_Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="elf" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="rm -rf" description="" id="com.atollic.truestudio.exe.debug.382034542" name="MB9BF165_Debug" parent="com.atollic.truestudio.exe.debug">
+					<folderInfo id="com.atollic.truestudio.exe.debug.382034542." name="/" resourcePath="">
+						<toolChain id="com.atollic.truestudio.exe.debug.toolchain.73463963" name="Atollic ARM Tools" superClass="com.atollic.truestudio.exe.debug.toolchain">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="com.atollic.truestudio.exe.debug.toolchain.platform.590528366" isAbstract="false" name="Debug platform" superClass="com.atollic.truestudio.exe.debug.toolchain.platform"/>
+							<builder buildPath="${workspace_loc:/mb9bf16xl_template/MB9BF165_Debug}" id="com.atollic.truestudio.mbs.builder1.145442251" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="CDT Internal Builder" superClass="com.atollic.truestudio.mbs.builder1">
+								<outputEntries>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="MB9BF165_Debug"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="MB9BF165_Debug"/>
+								</outputEntries>
+							</builder>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.as.1230599102" name="Assembler" superClass="com.atollic.truestudio.exe.debug.toolchain.as">
+								<option id="com.atollic.truestudio.common_options.target.endianess.1332562752" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess" value="com.atollic.truestudio.common_options.target.endianess.little" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.446345325" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="Cortex-M4" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.370072367" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.812230898" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu" value="com.atollic.truestudio.common_options.target.fpu.hard" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.as.symbols.defined.1444623263" name="Defined symbols" superClass="com.atollic.truestudio.as.symbols.defined"/>
+								<option id="com.atollic.truestudio.as.general.incpath.506583303" name="Include path" superClass="com.atollic.truestudio.as.general.incpath"/>
+								<option id="com.atollic.truestudio.common_options.target.fpucore.636544609" name="FPU" superClass="com.atollic.truestudio.common_options.target.fpucore" value="FPv4-SP-D16" valueType="enumerated"/>
+								<inputType id="com.atollic.truestudio.as.input.1084095138" name="Input" superClass="com.atollic.truestudio.as.input"/>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.gcc.1347815291" name="C Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gcc">
+								<option id="com.atollic.truestudio.gcc.symbols.defined.412000922" name="Defined symbols" superClass="com.atollic.truestudio.gcc.symbols.defined"/>
+								<option id="com.atollic.truestudio.gcc.directories.select.2125920078" name="Include path" superClass="com.atollic.truestudio.gcc.directories.select" valueType="includePath">
+									<listOptionValue builtIn="false" value="../../../common"/>
+									<listOptionValue builtIn="false" value="../../../../../../cmsis/include"/>
+								</option>
+								<option id="com.atollic.truestudio.common_options.target.endianess.49279756" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess" value="com.atollic.truestudio.common_options.target.endianess.little" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.1088043665" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="Cortex-M4" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.396024402" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.1715213345" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu" value="com.atollic.truestudio.common_options.target.fpu.hard" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.gcc.optimization.prep_garbage.798816866" name="Prepare dead code removal " superClass="com.atollic.truestudio.gcc.optimization.prep_garbage" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.gcc.optimization.prep_data.219820427" name="Prepare dead data removal" superClass="com.atollic.truestudio.gcc.optimization.prep_data" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.common_options.target.fpucore.277768432" name="FPU" superClass="com.atollic.truestudio.common_options.target.fpucore" value="FPv4-SP-D16" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.interwork.795713134" name="Mix ARM/Thumb" superClass="com.atollic.truestudio.common_options.target.interwork"/>
+								<inputType id="com.atollic.truestudio.gcc.input.875031923" superClass="com.atollic.truestudio.gcc.input"/>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.ld.1272506718" name="C Linker" superClass="com.atollic.truestudio.exe.debug.toolchain.ld">
+								<option id="com.atollic.truestudio.common_options.target.endianess.215572348" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess" value="com.atollic.truestudio.common_options.target.endianess.little" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.1555246259" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="Cortex-M4" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.1983184305" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.1536999708" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu" value="com.atollic.truestudio.common_options.target.fpu.hard" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.ld.general.scriptfile.1595079138" name="Linker script" superClass="com.atollic.truestudio.ld.general.scriptfile" value="..\linker\mb9b165_ram.ld" valueType="string"/>
+								<option id="com.atollic.truestudio.ld.optimization.do_garbage.1877367382" name="Dead code removal " superClass="com.atollic.truestudio.ld.optimization.do_garbage" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.ld.libraries.list.1126391755" name="Libraries" superClass="com.atollic.truestudio.ld.libraries.list"/>
+								<option id="com.atollic.truestudio.common_options.target.fpucore.333763228" name="FPU" superClass="com.atollic.truestudio.common_options.target.fpucore" value="FPv4-SP-D16" valueType="enumerated"/>
+								<inputType id="com.atollic.truestudio.ld.input.2113934979" name="Input" superClass="com.atollic.truestudio.ld.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.gpp.1941614936" name="C++ Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gpp">
+								<option id="com.atollic.truestudio.gpp.symbols.defined.1064415248" name="Defined symbols" superClass="com.atollic.truestudio.gpp.symbols.defined" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="MB9BF165"/>
+								</option>
+								<option id="com.atollic.truestudio.common_options.target.endianess.1261675741" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess" value="com.atollic.truestudio.common_options.target.endianess.little" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.132747070" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="Cortex-M4" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.1480295732" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.709759501" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu" value="com.atollic.truestudio.common_options.target.fpu.hard" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.gpp.optimization.prep_garbage.973227669" name="Prepare dead code removal" superClass="com.atollic.truestudio.gpp.optimization.prep_garbage" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.gpp.optimization.prep_data.824677650" name="Prepare dead data removal" superClass="com.atollic.truestudio.gpp.optimization.prep_data" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.gpp.optimization.fno_rtti.185377591" name="Disable RTTI" superClass="com.atollic.truestudio.gpp.optimization.fno_rtti"/>
+								<option id="com.atollic.truestudio.gpp.optimization.fno_exceptions.654459676" name="Disable exception handling" superClass="com.atollic.truestudio.gpp.optimization.fno_exceptions"/>
+                						<option id="com.atollic.truestudio.common_options.target.fpucore.333763228" name="FPU" superClass="com.atollic.truestudio.common_options.target.fpucore" value="FPv4-SP-D16" valueType="enumerated"/>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.ldcc.54263900" name="C++ Linker" superClass="com.atollic.truestudio.exe.debug.toolchain.ldcc">
+								<option id="com.atollic.truestudio.common_options.target.endianess.256779878" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess" value="com.atollic.truestudio.common_options.target.endianess.little" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.625509149" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="Cortex-M4" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.181312675" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.1991207502" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu" value="com.atollic.truestudio.common_options.target.fpu.hard" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.ldcc.optimization.do_garbage.842892106" name="Dead code removal" superClass="com.atollic.truestudio.ldcc.optimization.do_garbage" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.ldcc.general.scriptfile.1013868757" name="Linker script" superClass="com.atollic.truestudio.ldcc.general.scriptfile" value="..\linker\mb9b165_ram.ld" valueType="string"/>
+                						<option id="com.atollic.truestudio.common_options.target.fpucore.333763228" name="FPU" superClass="com.atollic.truestudio.common_options.target.fpucore" value="FPv4-SP-D16" valueType="enumerated"/>
+                						<option id="com.atollic.truestudio.ldcc.libraries.list.2132191023" name="Libraries" superClass="com.atollic.truestudio.ldcc.libraries.list" valueType="libs">
+									<listOptionValue builtIn="false" value="m"/>
+								</option>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.secoutput.1090045790" name="Other" superClass="com.atollic.truestudio.exe.debug.toolchain.secoutput"/>
+							<tool id="com.atollic.truestudio.ar.base.1192817072" name="Archiver" superClass="com.atollic.truestudio.ar.base"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="library/examples" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="com.atollic.truestudio.exe.debug.741894469">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.atollic.truestudio.exe.debug.741894469" moduleId="org.eclipse.cdt.core.settings" name="MB9BF165_Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="elf" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="rm -rf" description="" id="com.atollic.truestudio.exe.debug.741894469" name="MB9BF165_Release" parent="com.atollic.truestudio.exe.debug">
+					<folderInfo id="com.atollic.truestudio.exe.debug.741894469." name="/" resourcePath="">
+						<toolChain id="com.atollic.truestudio.exe.debug.toolchain.73463963" name="Atollic ARM Tools" superClass="com.atollic.truestudio.exe.debug.toolchain">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="com.atollic.truestudio.exe.debug.toolchain.platform.590528366" isAbstract="false" name="Debug platform" superClass="com.atollic.truestudio.exe.debug.toolchain.platform"/>
+							<builder buildPath="${workspace_loc:/mb9bf16xl_template/MB9BF165_Release}" id="com.atollic.truestudio.mbs.builder1.145442251" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="CDT Internal Builder" superClass="com.atollic.truestudio.mbs.builder1">
+								<outputEntries>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="MB9BF165_Release"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="MB9BF165_Release"/>
+								</outputEntries>
+							</builder>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.as.1230599102" name="Assembler" superClass="com.atollic.truestudio.exe.debug.toolchain.as">
+								<option id="com.atollic.truestudio.common_options.target.endianess.1332562752" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess" value="com.atollic.truestudio.common_options.target.endianess.little" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.446345325" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="Cortex-M4" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.370072367" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.812230898" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu" value="com.atollic.truestudio.common_options.target.fpu.hard" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.as.symbols.defined.1444623263" name="Defined symbols" superClass="com.atollic.truestudio.as.symbols.defined"/>
+								<option id="com.atollic.truestudio.as.general.incpath.506583303" name="Include path" superClass="com.atollic.truestudio.as.general.incpath"/>
+								<option id="com.atollic.truestudio.common_options.target.fpucore.636544609" name="FPU" superClass="com.atollic.truestudio.common_options.target.fpucore" value="FPv4-SP-D16" valueType="enumerated"/>
+								<inputType id="com.atollic.truestudio.as.input.1084095138" name="Input" superClass="com.atollic.truestudio.as.input"/>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.gcc.1347815291" name="C Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gcc">
+								<option id="com.atollic.truestudio.gcc.symbols.defined.412000922" name="Defined symbols" superClass="com.atollic.truestudio.gcc.symbols.defined"/>
+								<option id="com.atollic.truestudio.gcc.directories.select.2125920078" name="Include path" superClass="com.atollic.truestudio.gcc.directories.select" valueType="includePath">
+									<listOptionValue builtIn="false" value="../../../common"/>
+									<listOptionValue builtIn="false" value="../../../../../../cmsis/include"/>
+								</option>
+								<option id="com.atollic.truestudio.common_options.target.endianess.49279756" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess" value="com.atollic.truestudio.common_options.target.endianess.little" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.1088043665" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="Cortex-M4" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.396024402" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.1715213345" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu" value="com.atollic.truestudio.common_options.target.fpu.hard" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.gcc.optimization.prep_garbage.798816866" name="Prepare dead code removal " superClass="com.atollic.truestudio.gcc.optimization.prep_garbage" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.gcc.optimization.prep_data.219820427" name="Prepare dead data removal" superClass="com.atollic.truestudio.gcc.optimization.prep_data" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.common_options.target.fpucore.277768432" name="FPU" superClass="com.atollic.truestudio.common_options.target.fpucore" value="FPv4-SP-D16" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.interwork.795713134" name="Mix ARM/Thumb" superClass="com.atollic.truestudio.common_options.target.interwork"/>
+								<inputType id="com.atollic.truestudio.gcc.input.875031923" superClass="com.atollic.truestudio.gcc.input"/>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.ld.1272506718" name="C Linker" superClass="com.atollic.truestudio.exe.debug.toolchain.ld">
+								<option id="com.atollic.truestudio.common_options.target.endianess.215572348" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess" value="com.atollic.truestudio.common_options.target.endianess.little" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.1555246259" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="Cortex-M4" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.1983184305" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.1536999708" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu" value="com.atollic.truestudio.common_options.target.fpu.hard" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.ld.general.scriptfile.1595079138" name="Linker script" superClass="com.atollic.truestudio.ld.general.scriptfile" value="..\linker\mb9b165_rom.ld" valueType="string"/>
+								<option id="com.atollic.truestudio.ld.optimization.do_garbage.1877367382" name="Dead code removal " superClass="com.atollic.truestudio.ld.optimization.do_garbage" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.ld.libraries.list.1126391755" name="Libraries" superClass="com.atollic.truestudio.ld.libraries.list"/>
+								<option id="com.atollic.truestudio.common_options.target.fpucore.333763228" name="FPU" superClass="com.atollic.truestudio.common_options.target.fpucore" value="FPv4-SP-D16" valueType="enumerated"/>
+								<inputType id="com.atollic.truestudio.ld.input.2113934979" name="Input" superClass="com.atollic.truestudio.ld.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.gpp.1941614936" name="C++ Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gpp">
+								<option id="com.atollic.truestudio.gpp.symbols.defined.1064415248" name="Defined symbols" superClass="com.atollic.truestudio.gpp.symbols.defined" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="MB9BF165"/>
+								</option>
+								<option id="com.atollic.truestudio.common_options.target.endianess.1261675741" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess" value="com.atollic.truestudio.common_options.target.endianess.little" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.132747070" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="Cortex-M4" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.1480295732" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.709759501" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu" value="com.atollic.truestudio.common_options.target.fpu.hard" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.gpp.optimization.prep_garbage.973227669" name="Prepare dead code removal" superClass="com.atollic.truestudio.gpp.optimization.prep_garbage" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.gpp.optimization.prep_data.824677650" name="Prepare dead data removal" superClass="com.atollic.truestudio.gpp.optimization.prep_data" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.gpp.optimization.fno_rtti.185377591" name="Disable RTTI" superClass="com.atollic.truestudio.gpp.optimization.fno_rtti"/>
+								<option id="com.atollic.truestudio.gpp.optimization.fno_exceptions.654459676" name="Disable exception handling" superClass="com.atollic.truestudio.gpp.optimization.fno_exceptions"/>
+                						<option id="com.atollic.truestudio.common_options.target.fpucore.333763228" name="FPU" superClass="com.atollic.truestudio.common_options.target.fpucore" value="FPv4-SP-D16" valueType="enumerated"/>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.ldcc.54263900" name="C++ Linker" superClass="com.atollic.truestudio.exe.debug.toolchain.ldcc">
+								<option id="com.atollic.truestudio.common_options.target.endianess.256779878" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess" value="com.atollic.truestudio.common_options.target.endianess.little" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.625509149" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="Cortex-M4" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.181312675" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.1991207502" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu" value="com.atollic.truestudio.common_options.target.fpu.hard" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.ldcc.optimization.do_garbage.842892106" name="Dead code removal" superClass="com.atollic.truestudio.ldcc.optimization.do_garbage" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.ldcc.general.scriptfile.1013868757" name="Linker script" superClass="com.atollic.truestudio.ldcc.general.scriptfile" value="..\linker\mb9b165_rom.ld" valueType="string"/>
+                						<option id="com.atollic.truestudio.common_options.target.fpucore.333763228" name="FPU" superClass="com.atollic.truestudio.common_options.target.fpucore" value="FPv4-SP-D16" valueType="enumerated"/>
+                						<option id="com.atollic.truestudio.ldcc.libraries.list.2132191023" name="Libraries" superClass="com.atollic.truestudio.ldcc.libraries.list" valueType="libs">
+									<listOptionValue builtIn="false" value="m"/>
+								</option>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.secoutput.1090045790" name="Other" superClass="com.atollic.truestudio.exe.debug.toolchain.secoutput"/>
+							<tool id="com.atollic.truestudio.ar.base.1192817072" name="Archiver" superClass="com.atollic.truestudio.ar.base"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="library/examples" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="com.atollic.truestudio.exe.debug.207770301">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.atollic.truestudio.exe.debug.207770301" moduleId="org.eclipse.cdt.core.settings" name="MB9BF166_Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="elf" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="rm -rf" description="" id="com.atollic.truestudio.exe.debug.207770301" name="MB9BF166_Debug" parent="com.atollic.truestudio.exe.debug">
+					<folderInfo id="com.atollic.truestudio.exe.debug.207770301." name="/" resourcePath="">
+						<toolChain id="com.atollic.truestudio.exe.debug.toolchain.73463963" name="Atollic ARM Tools" superClass="com.atollic.truestudio.exe.debug.toolchain">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="com.atollic.truestudio.exe.debug.toolchain.platform.590528366" isAbstract="false" name="Debug platform" superClass="com.atollic.truestudio.exe.debug.toolchain.platform"/>
+							<builder buildPath="${workspace_loc:/mb9bf16xl_template/MB9BF166_Debug}" id="com.atollic.truestudio.mbs.builder1.145442251" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="CDT Internal Builder" superClass="com.atollic.truestudio.mbs.builder1">
+								<outputEntries>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="MB9BF166_Debug"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="MB9BF166_Debug"/>
+								</outputEntries>
+							</builder>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.as.1230599102" name="Assembler" superClass="com.atollic.truestudio.exe.debug.toolchain.as">
+								<option id="com.atollic.truestudio.common_options.target.endianess.1332562752" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess" value="com.atollic.truestudio.common_options.target.endianess.little" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.446345325" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="Cortex-M4" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.370072367" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.812230898" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu" value="com.atollic.truestudio.common_options.target.fpu.hard" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.as.symbols.defined.1444623263" name="Defined symbols" superClass="com.atollic.truestudio.as.symbols.defined"/>
+								<option id="com.atollic.truestudio.as.general.incpath.506583303" name="Include path" superClass="com.atollic.truestudio.as.general.incpath"/>
+								<option id="com.atollic.truestudio.common_options.target.fpucore.636544609" name="FPU" superClass="com.atollic.truestudio.common_options.target.fpucore" value="FPv4-SP-D16" valueType="enumerated"/>
+								<inputType id="com.atollic.truestudio.as.input.1084095138" name="Input" superClass="com.atollic.truestudio.as.input"/>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.gcc.1347815291" name="C Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gcc">
+								<option id="com.atollic.truestudio.gcc.symbols.defined.412000922" name="Defined symbols" superClass="com.atollic.truestudio.gcc.symbols.defined"/>
+								<option id="com.atollic.truestudio.gcc.directories.select.2125920078" name="Include path" superClass="com.atollic.truestudio.gcc.directories.select" valueType="includePath">
+									<listOptionValue builtIn="false" value="../../../common"/>
+									<listOptionValue builtIn="false" value="../../../../../../cmsis/include"/>
+								</option>
+								<option id="com.atollic.truestudio.common_options.target.endianess.49279756" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess" value="com.atollic.truestudio.common_options.target.endianess.little" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.1088043665" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="Cortex-M4" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.396024402" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.1715213345" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu" value="com.atollic.truestudio.common_options.target.fpu.hard" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.gcc.optimization.prep_garbage.798816866" name="Prepare dead code removal " superClass="com.atollic.truestudio.gcc.optimization.prep_garbage" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.gcc.optimization.prep_data.219820427" name="Prepare dead data removal" superClass="com.atollic.truestudio.gcc.optimization.prep_data" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.common_options.target.fpucore.277768432" name="FPU" superClass="com.atollic.truestudio.common_options.target.fpucore" value="FPv4-SP-D16" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.interwork.795713134" name="Mix ARM/Thumb" superClass="com.atollic.truestudio.common_options.target.interwork"/>
+								<inputType id="com.atollic.truestudio.gcc.input.875031923" superClass="com.atollic.truestudio.gcc.input"/>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.ld.1272506718" name="C Linker" superClass="com.atollic.truestudio.exe.debug.toolchain.ld">
+								<option id="com.atollic.truestudio.common_options.target.endianess.215572348" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess" value="com.atollic.truestudio.common_options.target.endianess.little" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.1555246259" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="Cortex-M4" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.1983184305" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.1536999708" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu" value="com.atollic.truestudio.common_options.target.fpu.hard" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.ld.general.scriptfile.1595079138" name="Linker script" superClass="com.atollic.truestudio.ld.general.scriptfile" value="..\linker\mb9b166_ram.ld" valueType="string"/>
+								<option id="com.atollic.truestudio.ld.optimization.do_garbage.1877367382" name="Dead code removal " superClass="com.atollic.truestudio.ld.optimization.do_garbage" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.ld.libraries.list.1126391755" name="Libraries" superClass="com.atollic.truestudio.ld.libraries.list"/>
+								<option id="com.atollic.truestudio.common_options.target.fpucore.333763228" name="FPU" superClass="com.atollic.truestudio.common_options.target.fpucore" value="FPv4-SP-D16" valueType="enumerated"/>
+								<inputType id="com.atollic.truestudio.ld.input.2113934979" name="Input" superClass="com.atollic.truestudio.ld.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.gpp.1941614936" name="C++ Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gpp">
+								<option id="com.atollic.truestudio.gpp.symbols.defined.1064415248" name="Defined symbols" superClass="com.atollic.truestudio.gpp.symbols.defined" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="MB9BF166"/>
+								</option>
+								<option id="com.atollic.truestudio.common_options.target.endianess.1261675741" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess" value="com.atollic.truestudio.common_options.target.endianess.little" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.132747070" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="Cortex-M4" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.1480295732" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.709759501" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu" value="com.atollic.truestudio.common_options.target.fpu.hard" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.gpp.optimization.prep_garbage.973227669" name="Prepare dead code removal" superClass="com.atollic.truestudio.gpp.optimization.prep_garbage" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.gpp.optimization.prep_data.824677650" name="Prepare dead data removal" superClass="com.atollic.truestudio.gpp.optimization.prep_data" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.gpp.optimization.fno_rtti.185377591" name="Disable RTTI" superClass="com.atollic.truestudio.gpp.optimization.fno_rtti"/>
+								<option id="com.atollic.truestudio.gpp.optimization.fno_exceptions.654459676" name="Disable exception handling" superClass="com.atollic.truestudio.gpp.optimization.fno_exceptions"/>
+                						<option id="com.atollic.truestudio.common_options.target.fpucore.333763228" name="FPU" superClass="com.atollic.truestudio.common_options.target.fpucore" value="FPv4-SP-D16" valueType="enumerated"/>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.ldcc.54263900" name="C++ Linker" superClass="com.atollic.truestudio.exe.debug.toolchain.ldcc">
+								<option id="com.atollic.truestudio.common_options.target.endianess.256779878" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess" value="com.atollic.truestudio.common_options.target.endianess.little" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.625509149" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="Cortex-M4" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.181312675" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.1991207502" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu" value="com.atollic.truestudio.common_options.target.fpu.hard" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.ldcc.optimization.do_garbage.842892106" name="Dead code removal" superClass="com.atollic.truestudio.ldcc.optimization.do_garbage" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.ldcc.general.scriptfile.1013868757" name="Linker script" superClass="com.atollic.truestudio.ldcc.general.scriptfile" value="..\linker\mb9b166_ram.ld" valueType="string"/>
+                						<option id="com.atollic.truestudio.common_options.target.fpucore.333763228" name="FPU" superClass="com.atollic.truestudio.common_options.target.fpucore" value="FPv4-SP-D16" valueType="enumerated"/>
+                						<option id="com.atollic.truestudio.ldcc.libraries.list.2132191023" name="Libraries" superClass="com.atollic.truestudio.ldcc.libraries.list" valueType="libs">
+									<listOptionValue builtIn="false" value="m"/>
+								</option>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.secoutput.1090045790" name="Other" superClass="com.atollic.truestudio.exe.debug.toolchain.secoutput"/>
+							<tool id="com.atollic.truestudio.ar.base.1192817072" name="Archiver" superClass="com.atollic.truestudio.ar.base"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="library/examples" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="com.atollic.truestudio.exe.debug.603941262">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.atollic.truestudio.exe.debug.603941262" moduleId="org.eclipse.cdt.core.settings" name="MB9BF166_Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="elf" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="rm -rf" description="" id="com.atollic.truestudio.exe.debug.603941262" name="MB9BF166_Release" parent="com.atollic.truestudio.exe.debug">
+					<folderInfo id="com.atollic.truestudio.exe.debug.603941262." name="/" resourcePath="">
+						<toolChain id="com.atollic.truestudio.exe.debug.toolchain.73463963" name="Atollic ARM Tools" superClass="com.atollic.truestudio.exe.debug.toolchain">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="com.atollic.truestudio.exe.debug.toolchain.platform.590528366" isAbstract="false" name="Debug platform" superClass="com.atollic.truestudio.exe.debug.toolchain.platform"/>
+							<builder buildPath="${workspace_loc:/mb9bf16xl_template/MB9BF166_Release}" id="com.atollic.truestudio.mbs.builder1.145442251" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="CDT Internal Builder" superClass="com.atollic.truestudio.mbs.builder1">
+								<outputEntries>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="MB9BF166_Release"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="MB9BF166_Release"/>
+								</outputEntries>
+							</builder>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.as.1230599102" name="Assembler" superClass="com.atollic.truestudio.exe.debug.toolchain.as">
+								<option id="com.atollic.truestudio.common_options.target.endianess.1332562752" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess" value="com.atollic.truestudio.common_options.target.endianess.little" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.446345325" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="Cortex-M4" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.370072367" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.812230898" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu" value="com.atollic.truestudio.common_options.target.fpu.hard" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.as.symbols.defined.1444623263" name="Defined symbols" superClass="com.atollic.truestudio.as.symbols.defined"/>
+								<option id="com.atollic.truestudio.as.general.incpath.506583303" name="Include path" superClass="com.atollic.truestudio.as.general.incpath"/>
+								<option id="com.atollic.truestudio.common_options.target.fpucore.636544609" name="FPU" superClass="com.atollic.truestudio.common_options.target.fpucore" value="FPv4-SP-D16" valueType="enumerated"/>
+								<inputType id="com.atollic.truestudio.as.input.1084095138" name="Input" superClass="com.atollic.truestudio.as.input"/>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.gcc.1347815291" name="C Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gcc">
+								<option id="com.atollic.truestudio.gcc.symbols.defined.412000922" name="Defined symbols" superClass="com.atollic.truestudio.gcc.symbols.defined"/>
+								<option id="com.atollic.truestudio.gcc.directories.select.2125920078" name="Include path" superClass="com.atollic.truestudio.gcc.directories.select" valueType="includePath">
+									<listOptionValue builtIn="false" value="../../../common"/>
+									<listOptionValue builtIn="false" value="../../../../../../cmsis/include"/>
+								</option>
+								<option id="com.atollic.truestudio.common_options.target.endianess.49279756" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess" value="com.atollic.truestudio.common_options.target.endianess.little" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.1088043665" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="Cortex-M4" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.396024402" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.1715213345" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu" value="com.atollic.truestudio.common_options.target.fpu.hard" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.gcc.optimization.prep_garbage.798816866" name="Prepare dead code removal " superClass="com.atollic.truestudio.gcc.optimization.prep_garbage" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.gcc.optimization.prep_data.219820427" name="Prepare dead data removal" superClass="com.atollic.truestudio.gcc.optimization.prep_data" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.common_options.target.fpucore.277768432" name="FPU" superClass="com.atollic.truestudio.common_options.target.fpucore" value="FPv4-SP-D16" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.interwork.795713134" name="Mix ARM/Thumb" superClass="com.atollic.truestudio.common_options.target.interwork"/>
+								<inputType id="com.atollic.truestudio.gcc.input.875031923" superClass="com.atollic.truestudio.gcc.input"/>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.ld.1272506718" name="C Linker" superClass="com.atollic.truestudio.exe.debug.toolchain.ld">
+								<option id="com.atollic.truestudio.common_options.target.endianess.215572348" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess" value="com.atollic.truestudio.common_options.target.endianess.little" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.1555246259" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="Cortex-M4" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.1983184305" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.1536999708" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu" value="com.atollic.truestudio.common_options.target.fpu.hard" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.ld.general.scriptfile.1595079138" name="Linker script" superClass="com.atollic.truestudio.ld.general.scriptfile" value="..\linker\mb9b166_rom.ld" valueType="string"/>
+								<option id="com.atollic.truestudio.ld.optimization.do_garbage.1877367382" name="Dead code removal " superClass="com.atollic.truestudio.ld.optimization.do_garbage" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.ld.libraries.list.1126391755" name="Libraries" superClass="com.atollic.truestudio.ld.libraries.list"/>
+								<option id="com.atollic.truestudio.common_options.target.fpucore.333763228" name="FPU" superClass="com.atollic.truestudio.common_options.target.fpucore" value="FPv4-SP-D16" valueType="enumerated"/>
+								<inputType id="com.atollic.truestudio.ld.input.2113934979" name="Input" superClass="com.atollic.truestudio.ld.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.gpp.1941614936" name="C++ Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gpp">
+								<option id="com.atollic.truestudio.gpp.symbols.defined.1064415248" name="Defined symbols" superClass="com.atollic.truestudio.gpp.symbols.defined" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="MB9BF166"/>
+								</option>
+								<option id="com.atollic.truestudio.common_options.target.endianess.1261675741" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess" value="com.atollic.truestudio.common_options.target.endianess.little" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.132747070" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="Cortex-M4" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.1480295732" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.709759501" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu" value="com.atollic.truestudio.common_options.target.fpu.hard" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.gpp.optimization.prep_garbage.973227669" name="Prepare dead code removal" superClass="com.atollic.truestudio.gpp.optimization.prep_garbage" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.gpp.optimization.prep_data.824677650" name="Prepare dead data removal" superClass="com.atollic.truestudio.gpp.optimization.prep_data" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.gpp.optimization.fno_rtti.185377591" name="Disable RTTI" superClass="com.atollic.truestudio.gpp.optimization.fno_rtti"/>
+								<option id="com.atollic.truestudio.gpp.optimization.fno_exceptions.654459676" name="Disable exception handling" superClass="com.atollic.truestudio.gpp.optimization.fno_exceptions"/>
+                						<option id="com.atollic.truestudio.common_options.target.fpucore.333763228" name="FPU" superClass="com.atollic.truestudio.common_options.target.fpucore" value="FPv4-SP-D16" valueType="enumerated"/>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.ldcc.54263900" name="C++ Linker" superClass="com.atollic.truestudio.exe.debug.toolchain.ldcc">
+								<option id="com.atollic.truestudio.common_options.target.endianess.256779878" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess" value="com.atollic.truestudio.common_options.target.endianess.little" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.625509149" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="Cortex-M4" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.181312675" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.1991207502" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu" value="com.atollic.truestudio.common_options.target.fpu.hard" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.ldcc.optimization.do_garbage.842892106" name="Dead code removal" superClass="com.atollic.truestudio.ldcc.optimization.do_garbage" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.ldcc.general.scriptfile.1013868757" name="Linker script" superClass="com.atollic.truestudio.ldcc.general.scriptfile" value="..\linker\mb9b166_rom.ld" valueType="string"/>
+                						<option id="com.atollic.truestudio.common_options.target.fpucore.333763228" name="FPU" superClass="com.atollic.truestudio.common_options.target.fpucore" value="FPv4-SP-D16" valueType="enumerated"/>
+                						<option id="com.atollic.truestudio.ldcc.libraries.list.2132191023" name="Libraries" superClass="com.atollic.truestudio.ldcc.libraries.list" valueType="libs">
+									<listOptionValue builtIn="false" value="m"/>
+								</option>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.secoutput.1090045790" name="Other" superClass="com.atollic.truestudio.exe.debug.toolchain.secoutput"/>
+							<tool id="com.atollic.truestudio.ar.base.1192817072" name="Archiver" superClass="com.atollic.truestudio.ar.base"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="library/examples" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="MB9BF16xL_template.com.atollic.truestudio.exe.906462789" name="Executable" projectType="com.atollic.truestudio.exe"/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.207770301;com.atollic.truestudio.exe.debug.207770301.502123258;com.atollic.truestudio.exe.debug.toolchain.gcc.245899855;com.atollic.truestudio.gcc.input.760682181">
+		    <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.207770301;com.atollic.truestudio.exe.debug.207770301.574600379;com.atollic.truestudio.exe.debug.toolchain.gcc.607734064;com.atollic.truestudio.gcc.input.65692479">
+		    <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.382034542;com.atollic.truestudio.exe.debug.382034542.634499271;com.atollic.truestudio.exe.debug.toolchain.gcc.677865588;com.atollic.truestudio.gcc.input.887757464">
+		    <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.382034542;com.atollic.truestudio.exe.debug.382034542.22675664;com.atollic.truestudio.exe.debug.toolchain.gcc.316856842;com.atollic.truestudio.gcc.input.959990642">
+		    <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.448828750;com.atollic.truestudio.exe.debug.448828750.327014269;com.atollic.truestudio.exe.debug.toolchain.gcc.278801384;com.atollic.truestudio.gcc.input.265266069">
+		    <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.448828750;com.atollic.truestudio.exe.debug.448828750.894340862;com.atollic.truestudio.exe.debug.toolchain.gcc.264350963;com.atollic.truestudio.gcc.input.732960072">
+		    <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.580095724;com.atollic.truestudio.exe.debug.580095724.708859807;com.atollic.truestudio.exe.debug.toolchain.gcc.269754971;com.atollic.truestudio.gcc.input.166129735">
+		    <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.580095724;com.atollic.truestudio.exe.debug.580095724.104553765;com.atollic.truestudio.exe.debug.toolchain.gcc.353700519;com.atollic.truestudio.gcc.input.626854266">
+		    <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.603941262;com.atollic.truestudio.exe.debug.603941262.667848101;com.atollic.truestudio.exe.debug.toolchain.gcc.125851146;com.atollic.truestudio.gcc.input.497633775">
+		    <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.603941262;com.atollic.truestudio.exe.debug.603941262.383934148;com.atollic.truestudio.exe.debug.toolchain.gcc.191478667;com.atollic.truestudio.gcc.input.879594278">
+		    <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.741894469;com.atollic.truestudio.exe.debug.741894469.751956583;com.atollic.truestudio.exe.debug.toolchain.gcc.53718437;com.atollic.truestudio.gcc.input.364208094">
+		    <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.741894469;com.atollic.truestudio.exe.debug.741894469.109699220;com.atollic.truestudio.exe.debug.toolchain.gcc.405648752;com.atollic.truestudio.gcc.input.122446897">
+		    <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+</cproject>

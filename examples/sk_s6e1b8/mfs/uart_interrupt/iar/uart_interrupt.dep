@@ -1,0 +1,1350 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>244197666</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>[REBUILD_ALL]</name>
+    </forcedrebuild>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\mft\mft_frt.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\devices\fm0p\s6e1b8xf\common\system_s6e1b8.c</file>
+      <file>$PROJ_DIR$\output\release\obj\i2cs.o</file>
+      <file>$PROJ_DIR$\output\release\obj\interrupts_fm0p_type_1-a.o</file>
+      <file>$PROJ_DIR$\output\release\obj\hsspi.o</file>
+      <file>$PROJ_DIR$\output\release\obj\hbif.o</file>
+      <file>$PROJ_DIR$\output\release\obj\workflash.o</file>
+      <file>$PROJ_DIR$\output\release\obj\mainflash.o</file>
+      <file>$PROJ_DIR$\output\release\obj\dualflash.o</file>
+      <file>$PROJ_DIR$\output\release\obj\exint.o</file>
+      <file>$PROJ_DIR$\output\release\obj\dt.o</file>
+      <file>$PROJ_DIR$\output\release\obj\extif.o</file>
+      <file>$PROJ_DIR$\output\release\obj\dstc.o</file>
+      <file>$PROJ_DIR$\output\release\obj\dma.o</file>
+      <file>$PROJ_DIR$\output\release\obj\dac.o</file>
+      <file>$PROJ_DIR$\output\release\obj\crc.o</file>
+      <file>$PROJ_DIR$\output\release\obj\cr.o</file>
+      <file>$PROJ_DIR$\output\release\obj\csv.o</file>
+      <file>$PROJ_DIR$\output\release\obj\clk.o</file>
+      <file>$PROJ_DIR$\output\release\obj\canfd.o</file>
+      <file>$PROJ_DIR$\output\release\obj\can.o</file>
+      <file>$PROJ_DIR$\output\release\obj\bt.o</file>
+      <file>$PROJ_DIR$\output\release\obj\can_pre.o</file>
+      <file>$PROJ_DIR$\output\release\obj\system_s6e1b8.o</file>
+      <file>$PROJ_DIR$\output\release\obj\adc.o</file>
+      <file>$PROJ_DIR$\output\release\exe\s6e1b8xf_template.out</file>
+      <file>$PROJ_DIR$\output\release\obj\mft_frt.o</file>
+      <file>$PROJ_DIR$\output\release\obj\interrupts_fm0p_type_1-b.o</file>
+      <file>$PROJ_DIR$\output\release\obj\qprc.o</file>
+      <file>$PROJ_DIR$\output\release\obj\mft_ocu.o</file>
+      <file>$PROJ_DIR$\output\release\obj\mft_wfg.o</file>
+      <file>$PROJ_DIR$\output\release\obj\pcrc.o</file>
+      <file>$PROJ_DIR$\output\release\obj\rtc.o</file>
+      <file>$PROJ_DIR$\output\release\obj\rc.o</file>
+      <file>$PROJ_DIR$\output\release\obj\reset.o</file>
+      <file>$PROJ_DIR$\output\release\obj\sdif.o</file>
+      <file>$PROJ_DIR$\output\release\obj\uid.o</file>
+      <file>$PROJ_DIR$\output\release\obj\hwwdg.o</file>
+      <file>$PROJ_DIR$\output\release\obj\swwdg.o</file>
+      <file>$PROJ_DIR$\output\release\obj\interrupts_fm0p_type_2-a.o</file>
+      <file>$PROJ_DIR$\output\release\obj\vbat.o</file>
+      <file>$PROJ_DIR$\output\release\obj\wc.o</file>
+      <file>$PROJ_DIR$\output\release\obj\interrupts.o</file>
+      <file>$PROJ_DIR$\output\release\obj\interrupts_fm0p_type_2-b.o</file>
+      <file>$PROJ_DIR$\output\release\obj\interrupts_fm0p_type_3.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\adc.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\interrupts_fm0p_type_3.o</file>
+      <file>$PROJ_DIR$\output\release\obj\interrupts_fm3_type_a.o</file>
+      <file>$PROJ_DIR$\output\release\obj\interrupts_fm3_type_b.o</file>
+      <file>$PROJ_DIR$\output\release\obj\interrupts_fm4_type_b.o</file>
+      <file>$PROJ_DIR$\output\release\obj\interrupts_fm4_type_a.o</file>
+      <file>$PROJ_DIR$\output\release\obj\interrupts_fm4_type_c.o</file>
+      <file>$PROJ_DIR$\output\release\obj\interrupts_fm3_type_c.o</file>
+      <file>$PROJ_DIR$\output\release\obj\pdl.o</file>
+      <file>$PROJ_DIR$\output\release\obj\uart_io.o</file>
+      <file>$PROJ_DIR$\output\release\obj\main.o</file>
+      <file>$PROJ_DIR$\output\release\obj\startup_s6e1b8.o</file>
+      <file>$PROJ_DIR$\output\release\obj\system_s6e1b8.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\can_pre.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\canfd.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\bt.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\can.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\csv.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\interrupts_fm3_type_b.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\cr.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\dac.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\clk.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\crc.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\dma.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\dstc.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\extif.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\dt.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\exint.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\dualflash.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\mainflash.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\workflash.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\hsspi.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\i2cs.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\hbif.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\i2s.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\i2sl.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\icc.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\lcd.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\lpm.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\lvd.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\mfs.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\mft_adcmp.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\mft_frt.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\mft_icu.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\mft_wfg.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\pcrc.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\mft_ocu.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\ppg.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\qprc.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\rtc.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\rc.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\reset.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\sdif.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\uid.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\vbat.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\swwdg.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\wc.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\hwwdg.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\interrupts_fm0p_type_1-a.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\interrupts.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\interrupts_fm0p_type_1-b.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\interrupts_fm0p_type_2-a.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\interrupts_fm0p_type_2-b.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\interrupts_fm3_type_a.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\interrupts_fm4_type_a.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\interrupts_fm3_type_c.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\interrupts_fm4_type_b.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\interrupts_fm4_type_c.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\interrupts_fm0p_type_1-a.pbi</file>
+      <file>$PROJ_DIR$\output\release\exe\s6e1b8xf_template.srec</file>
+      <file>$PROJ_DIR$\output\release\obj\pdl.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\uart_io.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\main.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\obj\adc.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\can.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\system_s6e1b8.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\bt.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\can_pre.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\interrupts_fm0p_type_1-b.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\canfd.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\clk.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\cr.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\crc.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\csv.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\dac.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\dma.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\dstc.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\dt.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\exint.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\extif.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\dualflash.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\mainflash.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\workflash.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\hbif.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\hsspi.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\i2cs.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\i2s.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\i2sl.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\icc.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\lcd.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\lpm.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\lvd.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\mfs.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\mft_adcmp.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\mft_frt.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\mft_icu.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\mft_ocu.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\mft_wfg.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\pcrc.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\ppg.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\qprc.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\rc.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\reset.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\rtc.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\sdif.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\uid.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\vbat.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\wc.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\hwwdg.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\swwdg.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\interrupts.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\interrupts_fm0p_type_2-a.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\interrupts_fm0p_type_2-b.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\interrupts_fm0p_type_3.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\lpm.o</file>
+      <file>$PROJ_DIR$\output\release\obj\main.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\interrupts_fm3_type_a.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\interrupts_fm3_type_b.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\interrupts_fm3_type_c.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\interrupts_fm4_type_a.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\interrupts_fm4_type_b.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\interrupts_fm4_type_c.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\pdl.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\uart_io.pbi</file>
+      <file>$PROJ_DIR$\output\release\obj\s6e1b8xf_template.pbd</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\i2sl\i2sl.c</file>
+      <file>$PROJ_DIR$\output\release\obj\mft_icu.o</file>
+      <file>$PROJ_DIR$\..\pdl_user.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\adc\adc.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\bt\bt.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\can\can.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\can\can_pre.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\can\canfd.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\clk\clk.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\cr\cr.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\crc\crc.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\csv\csv.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\dac\dac.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\dma\dma.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\dstc\dstc.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\dt\dt.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\exint\exint.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\extif\extif.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\flash\dualflash.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\flash\mainflash.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\flash\workflash.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\hbif\hbif.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\hsspi\hsspi.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\i2cs\i2cs.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\i2s\i2s.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\icc\icc.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\lcd\lcd.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\lpm\lpm.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\lvd\lvd.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\mfs\mfs.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\mft\mft_adcmp.c</file>
+      <file>$PROJ_DIR$\output\release\obj\mft_adcmp.o</file>
+      <file>$PROJ_DIR$\output\release\obj\mfs.o</file>
+      <file>$PROJ_DIR$\output\release\obj\lvd.o</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\mft\mft_icu.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\mft\mft_ocu.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\mft\mft_wfg.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\pcrc\pcrc.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\ppg\ppg.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\qprc\qprc.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\rc\rc.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\reset\reset.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\rtc\rtc.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\sdif\sdif.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\uid\uid.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\vbat\vbat.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\wc\wc.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\wdg\hwwdg.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\wdg\swwdg.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\interrupts.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\interrupts_fm0p.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\interrupts_fm0p_type_1-a.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\interrupts_fm0p_type_1-b.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\interrupts_fm0p_type_2-a.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\interrupts_fm0p_type_2-b.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\interrupts_fm0p_type_3.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\interrupts_fm3.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\interrupts_fm3_type_a.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\interrupts_fm3_type_b.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\interrupts_fm3_type_c.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\interrupts_fm4.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\interrupts_fm4_type_a.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\interrupts_fm4_type_b.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\interrupts_fm4_type_c.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\pdl.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\pdl.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drivers\pdl_header.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\devices\fm0p\s6e1b8xf\projects\iar\startup_s6e1b8.s</file>
+      <file>$PROJ_DIR$\..\main.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\utilities\printf_scanf\uart_io.c</file>
+      <file>$PROJ_DIR$\output\release\obj\i2s.o</file>
+      <file>$PROJ_DIR$\output\release\obj\lcd.o</file>
+      <file>$PROJ_DIR$\output\release\obj\ppg.o</file>
+      <file>$PROJ_DIR$\output\release\obj\i2sl.o</file>
+      <file>$PROJ_DIR$\output\release\obj\icc.o</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\mft\mft_frt.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 26</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 87</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\devices\fm0p\s6e1b8xf\common\system_s6e1b8.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 120</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 23</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 57</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 25</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\output\release\exe\s6e1b8xf_template.out</name>
+      <outputs>
+        <tool>
+          <name>OBJCOPY</name>
+          <file> 114</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\i2sl\i2sl.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 142</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 253</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 80</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\adc\adc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 118</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 24</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 45</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\bt\bt.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 121</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 21</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 60</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\can\can.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 119</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 20</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 61</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\can\can_pre.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 122</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 22</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 58</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\can\canfd.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 124</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 19</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 59</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\clk\clk.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 125</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 18</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 66</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\cr\cr.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 126</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 16</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 64</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\crc\crc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 127</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 15</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 67</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\csv\csv.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 128</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 17</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 62</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\dac\dac.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 129</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 14</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 65</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\dma\dma.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 130</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 13</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 68</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\dstc\dstc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 131</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 12</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 69</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\dt\dt.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 132</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 10</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 71</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\exint\exint.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 133</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 9</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 72</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\extif\extif.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 134</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 11</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 70</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\flash\dualflash.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 135</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 8</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 73</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\flash\mainflash.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 136</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 7</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 74</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\flash\workflash.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 137</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 6</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 75</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\hbif\hbif.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 138</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 5</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 78</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\hsspi\hsspi.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 139</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 4</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 76</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\i2cs\i2cs.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 140</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 2</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 77</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\i2s\i2s.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 141</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 250</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 79</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\icc\icc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 143</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 254</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 81</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\lcd\lcd.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 144</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 251</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 82</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\lpm\lpm.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 145</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 169</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 83</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\lvd\lvd.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 146</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 213</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 84</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\mfs\mfs.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 147</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 212</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 85</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\mft\mft_adcmp.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 148</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 211</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 86</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\mft\mft_icu.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 150</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 181</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 88</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\mft\mft_ocu.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 151</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 29</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 91</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\mft\mft_wfg.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 152</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 30</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 89</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\pcrc\pcrc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 153</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 31</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 90</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\ppg\ppg.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 154</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 252</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 92</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\qprc\qprc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 155</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 28</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 93</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\rc\rc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 156</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 33</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 95</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\reset\reset.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 157</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 34</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 96</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\rtc\rtc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 158</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 32</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 94</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\sdif\sdif.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 159</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 35</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 97</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\uid\uid.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 160</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 36</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 98</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\vbat\vbat.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 161</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 40</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 99</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\wc\wc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 162</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 41</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 101</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\wdg\hwwdg.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 163</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 37</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 102</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\wdg\swwdg.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 164</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 38</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 100</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\interrupts.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 165</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 42</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 104</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\interrupts_fm0p_type_1-a.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 113</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 3</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 103</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\interrupts_fm0p_type_1-b.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 123</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 27</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 105</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\interrupts_fm0p_type_2-a.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 166</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 39</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 106</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\interrupts_fm0p_type_2-b.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 167</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 43</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 107</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\interrupts_fm0p_type_3.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 168</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 46</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 44</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\interrupts_fm3_type_a.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 171</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 47</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 108</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\interrupts_fm3_type_b.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 172</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 48</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 63</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\interrupts_fm3_type_c.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 173</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 52</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 110</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\interrupts_fm4_type_a.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 174</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 50</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 109</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\interrupts_fm4_type_b.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 175</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 49</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 111</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\interrupts_fm4_type_c.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 176</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 51</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 112</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drivers\pdl.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 177</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 53</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 115</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\devices\fm0p\s6e1b8xf\projects\iar\startup_s6e1b8.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 56</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\main.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 170</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 55</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 117</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\utilities\printf_scanf\uart_io.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 178</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 54</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 116</file>
+        </tool>
+      </outputs>
+    </file>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>[REBUILD_ALL]</name>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

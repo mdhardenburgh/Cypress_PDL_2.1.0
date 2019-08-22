@@ -1,0 +1,15 @@
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3\arm\bin\armproc.dll" 
+
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3\arm\bin\armJET.dll" 
+
+"D:\P4\mykz_tarm-NB\software\products\PDL\dev\examples\sk_s6e1b8\mfs\uart_interrupt\iar\output\release\exe\uart_interrupt.out" 
+
+--plugin "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3\arm\bin\armbat.dll" 
+
+--macro "D:\P4\mykz_tarm-NB\software\products\PDL\dev\examples\sk_s6e1b8\mfs\uart_interrupt\iar\..\..\..\..\..\devices\fm0p\s6e1b8xf\projects\iar\config\reset.mac" 
+
+--flash_loader "D:\P4\mykz_tarm-NB\software\products\PDL\dev\examples\sk_s6e1b8\mfs\uart_interrupt\iar\flashloader\FlashLoader.board" 
+
+
+
+
